@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="560" viewBox="0 0 1500 560" font-family="'Helvetica Neue','Arial',sans-serif">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FAFBFC"/><stop offset="1" stop-color="#EEF0F4"/>
+    </linearGradient>
+    <marker id="aB" markerWidth="13" markerHeight="13" refX="8" refY="5" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M0,0 L10,5 L0,10 Z" fill="#0A3CD9"/>
+    </marker>
+    <symbol id="ecs" viewBox="0 0 70 64">
+      <rect x="2" y="2"  width="66" height="16" rx="4" fill="#0A3CD9"/><circle cx="56" cy="10" r="4" fill="#FFFFFF"/>
+      <rect x="2" y="24" width="66" height="16" rx="4" fill="#0A3CD9"/><circle cx="56" cy="32" r="4" fill="#FFFFFF"/>
+      <rect x="2" y="46" width="66" height="16" rx="4" fill="#0A3CD9"/><circle cx="56" cy="54" r="4" fill="#FFFFFF"/>
+    </symbol>
+    <symbol id="disk" viewBox="0 0 80 80">
+      <path d="M40,3 L77,40 L40,77 L3,40 Z" fill="#0A3CD9"/>
+      <path d="M40,22 L58,40 L40,58 L22,40 Z" fill="#FFFFFF" fill-opacity="0.28"/>
+    </symbol>
+  </defs>
+  <rect x="0" y="0" width="1500" height="560" fill="url(#bg)"/>
+
+  <!-- ================= LEFT SCENE (healthy) ================= -->
+  <g>
+    <rect x="20" y="50" width="640" height="470" rx="12" fill="#F0F2F5"/>
+    <rect x="44"  y="74" width="270" height="420" rx="4" fill="none" stroke="#2B2F36" stroke-width="2" stroke-dasharray="9 7"/>
+    <rect x="366" y="74" width="270" height="420" rx="4" fill="none" stroke="#2B2F36" stroke-width="2" stroke-dasharray="9 7"/>
+    <text x="179" y="110" text-anchor="middle" font-size="18" fill="#2B2F36">Region A Zone A</text>
+    <text x="501" y="110" text-anchor="middle" font-size="18" fill="#2B2F36">Region A Zone B</text>
+    <!-- status checks -->
+    <circle cx="179" cy="140" r="16" fill="#0A3CD9"/><path d="M172,140 L177,146 L187,134" fill="none" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="501" cy="140" r="16" fill="#0A3CD9"/><path d="M494,140 L499,146 L509,134" fill="none" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+    <use href="#ecs" x="151" y="164" width="56" height="52"/>
+    <use href="#ecs" x="473" y="164" width="56" height="52"/>
+    <text x="179" y="255" text-anchor="middle" font-size="20" fill="#5A6270">ECS</text>
+    <text x="501" y="255" text-anchor="middle" font-size="20" fill="#5A6270">ECS</text>
+    <line x1="179" y1="270" x2="179" y2="332" stroke="#9AA3B2" stroke-width="2" stroke-dasharray="3 7" stroke-linecap="round"/>
+    <line x1="501" y1="270" x2="501" y2="332" stroke="#9AA3B2" stroke-width="2" stroke-dasharray="3 7" stroke-linecap="round"/>
+    <use href="#disk" x="145" y="344" width="68" height="68"/>
+    <use href="#disk" x="467" y="344" width="68" height="68"/>
+    <text x="179" y="445" text-anchor="middle" font-size="19" fill="#5A6270">Primary</text>
+    <text x="179" y="468" text-anchor="middle" font-size="19" fill="#5A6270">Disk</text>
+    <text x="501" y="445" text-anchor="middle" font-size="19" fill="#5A6270">Secondary</text>
+    <text x="501" y="468" text-anchor="middle" font-size="19" fill="#5A6270">Disk</text>
+    <!-- replication ok -->
+    <line x1="219" y1="378" x2="461" y2="378" stroke="#0A3CD9" stroke-width="2.5" marker-end="url(#aB)"/>
+    <text x="340" y="345" text-anchor="middle" font-size="14" fill="#5A6270">Asynchronous</text>
+    <text x="340" y="362" text-anchor="middle" font-size="14" fill="#5A6270">replication</text>
+    <circle cx="340" cy="378" r="15" fill="#0A3CD9"/><path d="M333,378 L338,384 L348,372" fill="none" stroke="#FFFFFF" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <!-- ================= CENTER: Failover ================= -->
+  <text x="752" y="268" text-anchor="middle" font-size="26" font-weight="600" fill="#2B2F36">Failover</text>
+  <polygon points="700,292 772,292 772,280 812,303 772,326 772,314 700,314" fill="#FF6A00"/>
+
+  <!-- ================= RIGHT SCENE (failed) ================= -->
+  <g>
+    <rect x="840" y="50" width="640" height="470" rx="12" fill="#F0F2F5"/>
+    <rect x="864"  y="74" width="270" height="420" rx="4" fill="none" stroke="#2B2F36" stroke-width="2" stroke-dasharray="9 7"/>
+    <rect x="1186" y="74" width="270" height="420" rx="4" fill="none" stroke="#2B2F36" stroke-width="2" stroke-dasharray="9 7"/>
+    <text x="999"  y="110" text-anchor="middle" font-size="18" fill="#2B2F36">Region A Zone A</text>
+    <text x="1321" y="110" text-anchor="middle" font-size="18" fill="#2B2F36">Region A Zone B</text>
+    <!-- status: A failed (cross), B ok -->
+    <circle cx="999" cy="140" r="16" fill="#FF6A00"/><path d="M992,133 L1006,147 M1006,133 L992,147" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round"/>
+    <circle cx="1321" cy="140" r="16" fill="#0A3CD9"/><path d="M1314,140 L1319,146 L1329,134" fill="none" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+    <use href="#ecs" x="971" y="164" width="56" height="52"/>
+    <use href="#ecs" x="1293" y="164" width="56" height="52"/>
+    <text x="999"  y="255" text-anchor="middle" font-size="20" fill="#5A6270">ECS</text>
+    <text x="1321" y="255" text-anchor="middle" font-size="20" fill="#5A6270">ECS</text>
+    <line x1="999"  y1="270" x2="999"  y2="332" stroke="#9AA3B2" stroke-width="2" stroke-dasharray="3 7" stroke-linecap="round"/>
+    <line x1="1321" y1="270" x2="1321" y2="332" stroke="#9AA3B2" stroke-width="2" stroke-dasharray="3 7" stroke-linecap="round"/>
+    <use href="#disk" x="965"  y="344" width="68" height="68"/>
+    <use href="#disk" x="1287" y="344" width="68" height="68"/>
+    <text x="999"  y="445" text-anchor="middle" font-size="19" fill="#5A6270">Primary</text>
+    <text x="999"  y="468" text-anchor="middle" font-size="19" fill="#5A6270">Disk</text>
+    <text x="1321" y="445" text-anchor="middle" font-size="19" fill="#5A6270">Secondary</text>
+    <text x="1321" y="468" text-anchor="middle" font-size="19" fill="#5A6270">Disk</text>
+    <!-- replication broken -->
+    <line x1="1039" y1="378" x2="1281" y2="378" stroke="#9AA3B2" stroke-width="2.5" stroke-dasharray="8 6"/>
+    <text x="1160" y="345" text-anchor="middle" font-size="14" fill="#5A6270">Replication link</text>
+    <text x="1160" y="362" text-anchor="middle" font-size="14" fill="#5A6270">disconnected</text>
+    <circle cx="1160" cy="378" r="15" fill="#FF6A00"/><path d="M1153,371 L1167,385 M1167,371 L1153,385" stroke="#FFFFFF" stroke-width="3.5" stroke-linecap="round"/>
+  </g>
+
+  <!-- brand -->
+  <text x="20" y="548" font-size="15" font-weight="800" fill="#0A3CD9" letter-spacing="0.5">ALIBABA CLOUD INTELLIGENCE</text>
+  <text x="296" y="548" font-size="15" font-weight="800" fill="#8A8F99" letter-spacing="0.5">GROUP</text>
+</svg>

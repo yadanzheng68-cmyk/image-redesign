@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="560" viewBox="0 0 1440 560" font-family="'Helvetica Neue','Arial',sans-serif">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FAFBFC"/>
+      <stop offset="1" stop-color="#EEF0F4"/>
+    </linearGradient>
+  </defs>
+  <rect x="0" y="0" width="1440" height="560" fill="url(#bg)"/>
+
+  <!-- header -->
+  <text x="60" y="56" font-size="34" font-weight="700" fill="#0A3CD9">Incremental Snapshots</text>
+  <text x="1140" y="40" font-size="18" font-weight="800" fill="#0A3CD9" letter-spacing="0.5">ALIBABA CLOUD</text>
+  <text x="1140" y="64" font-size="18" font-weight="800" fill="#0A3CD9" letter-spacing="0.5">INTELLIGENCE</text>
+  <text x="1316" y="64" font-size="18" font-weight="800" fill="#8A8F99" letter-spacing="0.5">GROUP</text>
+
+  <!-- devices: centers 290, 720, 1150 ; body x = center-110 -->
+  <!-- ===== SNAPSHOT 1 (x=180) ===== -->
+  <g>
+    <rect x="392" y="118" width="14" height="338" fill="#16307F"/>
+    <rect x="180" y="110" width="220" height="346" rx="8" fill="#ECEFF4"/>
+    <rect x="172" y="92" width="236" height="34" rx="10" fill="#2E5BEA"/>
+    <text x="290" y="172" text-anchor="middle" font-size="23" font-weight="700" fill="#5A6270">Snapshot 1</text>
+    <!-- tiles base -->
+    <g>
+      <rect x="212" y="210" width="60" height="60" rx="11" fill="#DCE3EE"/><text x="242" y="248" text-anchor="middle" font-size="26" font-weight="700" fill="#8A93A5">A</text>
+      <rect x="308" y="210" width="60" height="60" rx="11" fill="#DCE3EE"/><text x="338" y="248" text-anchor="middle" font-size="26" font-weight="700" fill="#8A93A5">B</text>
+      <rect x="212" y="310" width="60" height="60" rx="11" fill="#DCE3EE"/><text x="242" y="348" text-anchor="middle" font-size="26" font-weight="700" fill="#8A93A5">C</text>
+      <rect x="308" y="310" width="60" height="60" rx="11" fill="#DCE3EE"/><text x="338" y="348" text-anchor="middle" font-size="26" font-weight="700" fill="#8A93A5">D</text>
+    </g>
+  </g>
+
+  <!-- chevron 1 -->
+  <path d="M488,212 L520,260 L488,308" fill="none" stroke="#0A3CD9" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- ===== SNAPSHOT 2 (x=610) ===== -->
+  <g>
+    <rect x="822" y="118" width="14" height="338" fill="#16307F"/>
+    <rect x="610" y="110" width="220" height="346" rx="8" fill="#ECEFF4"/>
+    <rect x="602" y="92" width="236" height="34" rx="10" fill="#2E5BEA"/>
+    <text x="720" y="172" text-anchor="middle" font-size="23" font-weight="700" fill="#5A6270">Snapshot 2</text>
+    <g>
+      <rect x="642" y="210" width="60" height="60" rx="11" fill="#DCE3EE"/><text x="672" y="248" text-anchor="middle" font-size="26" font-weight="700" fill="#8A93A5">A</text>
+      <rect x="738" y="210" width="60" height="60" rx="11" fill="#2E5BEA"/><text x="762" y="248" text-anchor="middle" font-size="26" font-weight="700" fill="#FFFFFF">B</text><text x="784" y="256" text-anchor="middle" font-size="16" font-weight="700" fill="#FFFFFF">1</text>
+      <rect x="642" y="310" width="60" height="60" rx="11" fill="#2E5BEA"/><text x="666" y="348" text-anchor="middle" font-size="26" font-weight="700" fill="#FFFFFF">C</text><text x="688" y="356" text-anchor="middle" font-size="16" font-weight="700" fill="#FFFFFF">1</text>
+      <rect x="738" y="310" width="60" height="60" rx="11" fill="#DCE3EE"/><text x="768" y="348" text-anchor="middle" font-size="26" font-weight="700" fill="#8A93A5">D</text>
+    </g>
+  </g>
+
+  <!-- chevron 2 -->
+  <path d="M918,212 L950,260 L918,308" fill="none" stroke="#0A3CD9" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- ===== SNAPSHOT 3 (x=1040) ===== -->
+  <g>
+    <rect x="1252" y="118" width="14" height="338" fill="#16307F"/>
+    <rect x="1040" y="110" width="220" height="346" rx="8" fill="#ECEFF4"/>
+    <rect x="1032" y="92" width="236" height="34" rx="10" fill="#2E5BEA"/>
+    <text x="1150" y="172" text-anchor="middle" font-size="23" font-weight="700" fill="#5A6270">Snapshot 3</text>
+    <g>
+      <rect x="1072" y="210" width="60" height="60" rx="11" fill="#DCE3EE"/><text x="1102" y="248" text-anchor="middle" font-size="26" font-weight="700" fill="#8A93A5">A</text>
+      <rect x="1168" y="210" width="60" height="60" rx="11" fill="#0A3CD9"/><text x="1192" y="248" text-anchor="middle" font-size="26" font-weight="700" fill="#FFFFFF">B</text><text x="1214" y="256" text-anchor="middle" font-size="16" font-weight="700" fill="#FFFFFF">2</text>
+      <rect x="1072" y="310" width="60" height="60" rx="11" fill="#2E5BEA"/><text x="1096" y="348" text-anchor="middle" font-size="26" font-weight="700" fill="#FFFFFF">C</text><text x="1118" y="356" text-anchor="middle" font-size="16" font-weight="700" fill="#FFFFFF">1</text>
+      <rect x="1168" y="310" width="60" height="60" rx="11" fill="#DCE3EE"/><text x="1198" y="348" text-anchor="middle" font-size="26" font-weight="700" fill="#8A93A5">D</text>
+    </g>
+  </g>
+
+  <!-- legend -->
+  <g font-size="16" fill="#5A6270">
+    <rect x="300" y="500" width="26" height="26" rx="6" fill="#DCE3EE"/><text x="334" y="519">Unchanged block</text>
+    <rect x="560" y="500" width="26" height="26" rx="6" fill="#2E5BEA"/><text x="594" y="519">Changed block</text>
+    <rect x="800" y="500" width="26" height="26" rx="6" fill="#0A3CD9"/><text x="834" y="519">Latest change</text>
+  </g>
+</svg>
