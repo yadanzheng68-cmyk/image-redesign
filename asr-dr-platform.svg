@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1460" height="1380" viewBox="0 0 1460 1380" font-family="'Helvetica Neue','Arial',sans-serif">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FAFBFC"/>
+      <stop offset="1" stop-color="#EEF0F4"/>
+    </linearGradient>
+    <marker id="aD" markerWidth="12" markerHeight="12" refX="8" refY="5" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M0,0 L10,5 L0,10 Z" fill="#2B2F36"/>
+    </marker>
+    <marker id="aB" markerWidth="12" markerHeight="12" refX="8" refY="5" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M0,0 L10,5 L0,10 Z" fill="#0A3CD9"/>
+    </marker>
+
+    <!-- rack server (app cluster unit) -->
+    <symbol id="rack" viewBox="0 0 60 54">
+      <rect x="0" y="1"  width="60" height="15" rx="3" fill="#0A3CD9"/>
+      <rect x="0" y="20" width="60" height="15" rx="3" fill="#0A3CD9"/>
+      <rect x="0" y="39" width="60" height="15" rx="3" fill="#0A3CD9"/>
+      <g fill="#FFFFFF"><circle cx="9" cy="8.5" r="2.3"/><circle cx="17" cy="8.5" r="2.3"/><circle cx="9" cy="27.5" r="2.3"/><circle cx="17" cy="27.5" r="2.3"/><circle cx="9" cy="46.5" r="2.3"/><circle cx="17" cy="46.5" r="2.3"/></g>
+      <g fill="#FFFFFF" fill-opacity="0.8"><rect x="28" y="6" width="26" height="5" rx="2"/><rect x="28" y="25" width="26" height="5" rx="2"/><rect x="28" y="44" width="26" height="5" rx="2"/></g>
+    </symbol>
+
+    <!-- SLB node graph -->
+    <symbol id="slb" viewBox="0 0 64 56">
+      <g stroke="#0A3CD9" stroke-width="3"><line x1="32" y1="26" x2="13" y2="13"/><line x1="32" y1="26" x2="51" y2="13"/><line x1="32" y1="26" x2="32" y2="47"/></g>
+      <circle cx="32" cy="26" r="10" fill="#0A3CD9"/>
+      <circle cx="13" cy="13" r="7" fill="#0A3CD9"/><circle cx="51" cy="13" r="7" fill="#0A3CD9"/><circle cx="32" cy="47" r="7" fill="#0A3CD9"/>
+    </symbol>
+
+    <!-- Redis cache (stacked layers) -->
+    <symbol id="redis" viewBox="0 0 60 58">
+      <rect x="2" y="2"  width="56" height="15" rx="5" fill="#0A3CD9"/>
+      <rect x="2" y="21" width="56" height="15" rx="5" fill="#1E50E0"/>
+      <rect x="2" y="40" width="56" height="15" rx="5" fill="#0A3CD9"/>
+      <g fill="#FFFFFF" fill-opacity="0.85"><circle cx="12" cy="9.5" r="2.6"/><circle cx="12" cy="28.5" r="2.6"/><circle cx="12" cy="47.5" r="2.6"/></g>
+    </symbol>
+
+    <!-- RDS (hexagon cluster) -->
+    <symbol id="rds" viewBox="0 0 60 56">
+      <path d="M14,8 L26,8 L32,18 L26,28 L14,28 L8,18 Z"  fill="#EAF0FF" stroke="#0A3CD9" stroke-width="3" stroke-linejoin="round"/>
+      <path d="M34,8 L46,8 L52,18 L46,28 L34,28 L28,18 Z"  fill="#EAF0FF" stroke="#0A3CD9" stroke-width="3" stroke-linejoin="round"/>
+      <path d="M24,30 L36,30 L42,40 L36,50 L24,50 L18,40 Z" fill="#0A3CD9" stroke="#0A3CD9" stroke-width="3" stroke-linejoin="round"/>
+    </symbol>
+
+    <!-- MongoDB (diamond + leaf) -->
+    <symbol id="mongo" viewBox="0 0 56 56">
+      <path d="M28,3 L53,28 L28,53 L3,28 Z" fill="#FFFFFF" stroke="#0A3CD9" stroke-width="3" stroke-linejoin="round"/>
+      <path d="M28,13 C20,24 22,38 28,44 C34,38 36,24 28,13 Z" fill="#0A3CD9"/>
+      <line x1="28" y1="44" x2="28" y2="49" stroke="#0A3CD9" stroke-width="2.5"/>
+    </symbol>
+
+    <!-- OSS (cloud + arrow) -->
+    <symbol id="oss" viewBox="0 0 64 46">
+      <path d="M18,42 a13,13 0 0,1 -1,-26 a17,15 0 0,1 32,-3 a11,11 0 0,1 2,29 Z" fill="#0A3CD9"/>
+      <path d="M32,16 L40,26 L34,26 L34,36 L30,36 L30,26 L24,26 Z" fill="#FFFFFF"/>
+    </symbol>
+
+    <!-- OTS (table store nodes) -->
+    <symbol id="ots" viewBox="0 0 56 54">
+      <g stroke="#0A3CD9" stroke-width="3"><line x1="28" y1="12" x2="11" y2="44"/><line x1="28" y1="12" x2="28" y2="44"/><line x1="28" y1="12" x2="45" y2="44"/></g>
+      <circle cx="28" cy="11" r="8" fill="#0A3CD9"/>
+      <circle cx="11" cy="45" r="7" fill="#0A3CD9"/><circle cx="28" cy="45" r="7" fill="#0A3CD9"/><circle cx="45" cy="45" r="7" fill="#0A3CD9"/>
+    </symbol>
+
+    <!-- monitor -->
+    <symbol id="mon" viewBox="0 0 60 52">
+      <rect x="3" y="2" width="54" height="35" rx="4" fill="#FFFFFF" stroke="#5A6270" stroke-width="3"/>
+      <rect x="25" y="37" width="10" height="7" fill="#5A6270"/>
+      <rect x="16" y="45" width="28" height="5" rx="2" fill="#5A6270"/>
+    </symbol>
+  </defs>
+
+  <rect x="0" y="0" width="1460" height="1380" fill="url(#bg)"/>
+
+  <!-- ===== TITLE BANNER ===== -->
+  <rect x="0" y="0" width="1460" height="96" fill="#0A3CD9"/>
+  <text x="730" y="60" text-anchor="middle" font-size="34" font-weight="700" fill="#FFFFFF">ASR/ASRDR DR Management Platform</text>
+
+  <!-- ===== ACCESS REQUEST ===== -->
+  <use href="#mon" x="500" y="138" width="60" height="52"/>
+  <text x="715" y="150" text-anchor="middle" font-size="20" fill="#5A6270">Access Request</text>
+  <line x1="562" y1="166" x2="872" y2="166" stroke="#5A6270" stroke-width="2.5"/>
+  <rect x="876" y="140" width="54" height="54" rx="10" fill="#0A3CD9"/>
+  <text x="903" y="180" text-anchor="middle" font-size="34" font-weight="800" fill="#FFFFFF">G</text>
+  <text x="730" y="192" text-anchor="middle" font-size="20" fill="#5A6270">GSLB/DNS</text>
+
+  <!-- branch bus from GSLB -->
+  <path d="M903,194 V240 H410" fill="none" stroke="#0A3CD9" stroke-width="2.5"/>
+  <path d="M903,240 H1235" fill="none" stroke="#0A3CD9" stroke-width="2.5" stroke-dasharray="7 6"/>
+  <line x1="410" y1="240" x2="410" y2="296" stroke="#0A3CD9" stroke-width="2.5" marker-end="url(#aB)"/>
+  <line x1="1235" y1="240" x2="1235" y2="316" stroke="#0A3CD9" stroke-width="2.5" stroke-dasharray="7 6" marker-end="url(#aB)"/>
+
+  <!-- ===== REGIONS ===== -->
+  <rect x="30" y="270" width="770" height="1090" rx="14" fill="#E9EDF3"/>
+  <rect x="1045" y="270" width="385" height="1090" rx="14" fill="#E9EDF3"/>
+  <line x1="412" y1="290" x2="412" y2="1295" stroke="#C2C8D2" stroke-width="2" stroke-dasharray="6 6"/>
+  <text x="58" y="302" font-size="24" fill="#5A6270">DC1</text>
+  <text x="748" y="302" font-size="24" fill="#5A6270">DC2</text>
+  <text x="1370" y="302" font-size="24" fill="#5A6270">DC3</text>
+
+  <!-- ===== SLB ROW ===== -->
+  <rect x="150" y="300" width="520" height="84" rx="10" fill="#FFFFFF" stroke="#9AA3B2" stroke-width="2" stroke-dasharray="8 6"/>
+  <text x="410" y="320" text-anchor="middle" font-size="20" fill="#1A1A1A">SLB Cluster</text>
+  <use href="#slb" x="187" y="328" width="56" height="49"/>
+  <use href="#slb" x="572" y="328" width="56" height="49"/>
+  <line x1="250" y1="352" x2="565" y2="352" stroke="#0A3CD9" stroke-width="2" stroke-dasharray="6 5"/>
+  <use href="#slb" x="1207" y="322" width="56" height="49"/>
+
+  <!-- SLB -> App -->
+  <line x1="400" y1="384" x2="240" y2="468" stroke="#2B2F36" stroke-width="2.5" marker-end="url(#aD)"/>
+  <line x1="420" y1="384" x2="585" y2="468" stroke="#2B2F36" stroke-width="2.5" marker-end="url(#aD)"/>
+  <line x1="1235" y1="372" x2="1235" y2="468" stroke="#2B2F36" stroke-width="2.5" marker-end="url(#aD)"/>
+
+  <!-- ===== APPLICATION CLUSTER ROW ===== -->
+  <g>
+    <rect x="70" y="470" width="290" height="100" rx="10" fill="#FFFFFF" stroke="#9AA3B2" stroke-width="2" stroke-dasharray="8 6"/>
+    <use href="#rack" x="101" y="486" width="58" height="52"/>
+    <use href="#rack" x="186" y="486" width="58" height="52"/>
+    <use href="#rack" x="271" y="486" width="58" height="52"/>
+    <text x="215" y="558" text-anchor="middle" font-size="22" fill="#1A1A1A">Application Cluster</text>
+  </g>
+  <g>
+    <rect x="455" y="470" width="290" height="100" rx="10" fill="#FFFFFF" stroke="#9AA3B2" stroke-width="2" stroke-dasharray="8 6"/>
+    <use href="#rack" x="486" y="486" width="58" height="52"/>
+    <use href="#rack" x="571" y="486" width="58" height="52"/>
+    <use href="#rack" x="656" y="486" width="58" height="52"/>
+    <text x="600" y="558" text-anchor="middle" font-size="22" fill="#1A1A1A">Application Cluster</text>
+  </g>
+  <g>
+    <rect x="1090" y="470" width="290" height="100" rx="10" fill="#FFFFFF" stroke="#9AA3B2" stroke-width="2" stroke-dasharray="8 6"/>
+    <use href="#rack" x="1121" y="486" width="58" height="52"/>
+    <use href="#rack" x="1206" y="486" width="58" height="52"/>
+    <use href="#rack" x="1291" y="486" width="58" height="52"/>
+    <text x="1235" y="558" text-anchor="middle" font-size="22" fill="#1A1A1A">Application Cluster</text>
+  </g>
+
+  <!-- App -> Redis -->
+  <line x1="215" y1="572" x2="215" y2="664" stroke="#2B2F36" stroke-width="2.5" marker-end="url(#aD)"/>
+  <line x1="600" y1="572" x2="600" y2="664" stroke="#2B2F36" stroke-width="2.5" marker-end="url(#aD)"/>
+  <line x1="1235" y1="572" x2="1235" y2="664" stroke="#2B2F36" stroke-width="2.5" marker-end="url(#aD)"/>
+  <text x="412" y="610" text-anchor="middle" font-size="16" fill="#5A6270">Log</text>
+  <text x="412" y="630" text-anchor="middle" font-size="16" fill="#5A6270">Synchronization</text>
+
+  <!-- ===== REDIS ROW ===== -->
+  <rect x="150" y="668" width="520" height="92" rx="10" fill="#FFFFFF" stroke="#9AA3B2" stroke-width="2" stroke-dasharray="8 6"/>
+  <use href="#redis" x="185" y="676" width="60" height="58"/>
+  <use href="#redis" x="570" y="676" width="60" height="58"/>
+  <text x="410" y="752" text-anchor="middle" font-size="20" fill="#1A1A1A">Redis Cache</text>
+  <use href="#redis" x="1205" y="676" width="60" height="58"/>
+  <text x="1235" y="752" text-anchor="middle" font-size="20" fill="#1A1A1A">Redis Cache</text>
+  <!-- redis cross replication -->
+  <line x1="645" y1="705" x2="1190" y2="705" stroke="#0A3CD9" stroke-width="2.5" stroke-dasharray="8 6" marker-end="url(#aB)"/>
+  <text x="918" y="676" text-anchor="middle" font-size="16" fill="#5A6270">DTS Database</text>
+  <text x="918" y="696" text-anchor="middle" font-size="16" fill="#5A6270">Asynchronous Replication</text>
+
+  <!-- Redis -> RDS -->
+  <line x1="215" y1="760" x2="215" y2="846" stroke="#2B2F36" stroke-width="2.5" marker-end="url(#aD)"/>
+  <line x1="600" y1="760" x2="600" y2="846" stroke="#2B2F36" stroke-width="2.5" marker-end="url(#aD)"/>
+  <line x1="1235" y1="760" x2="1255" y2="846" stroke="#2B2F36" stroke-width="2.5" marker-end="url(#aD)"/>
+  <text x="412" y="800" text-anchor="middle" font-size="16" fill="#5A6270">Log</text>
+  <text x="412" y="820" text-anchor="middle" font-size="16" fill="#5A6270">Synchronization</text>
+
+  <!-- ===== RDS ROW ===== -->
+  <rect x="170" y="850" width="500" height="98" rx="10" fill="#FFFFFF" stroke="#9AA3B2" stroke-width="2" stroke-dasharray="8 6"/>
+  <use href="#rds" x="186" y="862" width="58" height="54"/>
+  <use href="#rds" x="571" y="862" width="58" height="54"/>
+  <text x="215" y="938" text-anchor="middle" font-size="20" fill="#1A1A1A">RDS Master</text>
+  <text x="600" y="938" text-anchor="middle" font-size="20" fill="#1A1A1A">RDS Slave</text>
+  <use href="#rds" x="1206" y="862" width="58" height="54"/>
+  <text x="1235" y="938" text-anchor="middle" font-size="20" fill="#1A1A1A">RDS</text>
+  <!-- rds cross replication -->
+  <line x1="645" y1="888" x2="1190" y2="888" stroke="#0A3CD9" stroke-width="2.5" stroke-dasharray="8 6" marker-end="url(#aB)"/>
+  <text x="918" y="858" text-anchor="middle" font-size="16" fill="#5A6270">DTS Database</text>
+  <text x="918" y="878" text-anchor="middle" font-size="16" fill="#5A6270">Asynchronous Replication</text>
+
+  <!-- ===== MONGODB ROW ===== -->
+  <use href="#mongo" x="139" y="996" width="52" height="52"/>
+  <text x="165" y="1072" text-anchor="middle" font-size="20" fill="#1A1A1A">MongoDB</text>
+  <use href="#mongo" x="574" y="996" width="52" height="52"/>
+  <text x="600" y="1072" text-anchor="middle" font-size="20" fill="#1A1A1A">MongoDB</text>
+  <use href="#mongo" x="1159" y="996" width="52" height="52"/>
+  <text x="1185" y="1072" text-anchor="middle" font-size="20" fill="#1A1A1A">MongoDB</text>
+  <line x1="645" y1="1022" x2="1150" y2="1022" stroke="#0A3CD9" stroke-width="2.5" stroke-dasharray="8 6" marker-end="url(#aB)"/>
+  <text x="918" y="990" text-anchor="middle" font-size="16" fill="#5A6270">DTS Database</text>
+  <text x="918" y="1010" text-anchor="middle" font-size="16" fill="#5A6270">Asynchronous Replication</text>
+
+  <!-- ===== OSS ROW ===== -->
+  <use href="#oss" x="136" y="1108" width="58" height="42"/>
+  <text x="165" y="1180" text-anchor="middle" font-size="20" fill="#1A1A1A">OSS</text>
+  <use href="#oss" x="571" y="1108" width="58" height="42"/>
+  <text x="600" y="1180" text-anchor="middle" font-size="20" fill="#1A1A1A">OSS</text>
+  <use href="#oss" x="1156" y="1108" width="58" height="42"/>
+  <text x="1185" y="1180" text-anchor="middle" font-size="20" fill="#1A1A1A">OSS</text>
+  <line x1="645" y1="1128" x2="1150" y2="1128" stroke="#0A3CD9" stroke-width="2.5" stroke-dasharray="8 6" marker-end="url(#aB)"/>
+  <text x="918" y="1108" text-anchor="middle" font-size="16" fill="#5A6270">Async Interface Replication</text>
+
+  <!-- ===== OTS ROW ===== -->
+  <use href="#ots" x="139" y="1206" width="52" height="50"/>
+  <text x="165" y="1284" text-anchor="middle" font-size="20" fill="#1A1A1A">OTS</text>
+  <use href="#ots" x="574" y="1206" width="52" height="50"/>
+  <text x="600" y="1284" text-anchor="middle" font-size="20" fill="#1A1A1A">OTS</text>
+  <use href="#ots" x="1159" y="1206" width="52" height="50"/>
+  <text x="1185" y="1284" text-anchor="middle" font-size="20" fill="#1A1A1A">OTS</text>
+  <line x1="645" y1="1230" x2="1150" y2="1230" stroke="#0A3CD9" stroke-width="2.5" stroke-dasharray="8 6" marker-end="url(#aB)"/>
+  <text x="918" y="1210" text-anchor="middle" font-size="16" fill="#5A6270">Async Interface Replication</text>
+
+  <!-- ===== BOTTOM BANNERS ===== -->
+  <rect x="30" y="1300" width="770" height="60" rx="0" fill="#0A3CD9"/>
+  <rect x="30" y="1348" width="770" height="12" fill="#0A3CD9"/>
+  <text x="415" y="1338" text-anchor="middle" font-size="24" font-weight="600" fill="#FFFFFF">Metro Data Center</text>
+  <rect x="1045" y="1300" width="385" height="60" fill="#0A3CD9"/>
+  <text x="1237" y="1338" text-anchor="middle" font-size="24" font-weight="600" fill="#FFFFFF">Geo Data Center</text>
+</svg>
