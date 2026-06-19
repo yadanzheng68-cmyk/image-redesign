@@ -90,13 +90,13 @@
     <line x1="705" y1="566" x2="805" y2="566" stroke="#E0822C" stroke-width="1.5"/>
   </g>
   <g font-size="21" fill="#5C9E3F" text-anchor="end">
-    <text x="330" y="560">Free</text>
-    <text x="330" y="612">Allocable</text>
+    <text x="330" y="558">Free</text>
+    <text x="330" y="586">Allocable</text>
     <text x="330" y="762">Used</text>
   </g>
   <g stroke="#5C9E3F" stroke-width="1.5">
-    <line x1="338" y1="554" x2="360" y2="554"/>
-    <line x1="338" y1="606" x2="360" y2="606"/>
+    <line x1="338" y1="552" x2="360" y2="552"/>
+    <line x1="338" y1="580" x2="360" y2="580"/>
     <line x1="338" y1="756" x2="360" y2="756"/>
   </g>
 
