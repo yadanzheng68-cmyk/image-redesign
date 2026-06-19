@@ -25,8 +25,9 @@
   <text x="62" y="98" font-size="18" fill="#6B7280" letter-spacing="0.5">AI Large Model Cloud Platform Architecture</text>
 
   <!-- brand top-right -->
-  <text x="1540" y="48" text-anchor="end" font-size="23" font-weight="800" fill="#0A3CD9" letter-spacing="0.5">ALIBABA CLOUD</text>
-  <text x="1540" y="78" text-anchor="end" font-size="23" font-weight="800" letter-spacing="0.5"><tspan fill="#0A3CD9">INTELLIGENCE </tspan><tspan fill="#8A8F99">GROUP</tspan></text>
+  <text x="1235" y="48" font-size="23" font-weight="800" fill="#0A3CD9" letter-spacing="0.5">ALIBABA CLOUD</text>
+  <text x="1235" y="78" font-size="23" font-weight="800" letter-spacing="0.5" fill="#0A3CD9">INTELLIGENCE</text>
+  <text x="1448" y="78" font-size="23" font-weight="800" letter-spacing="0.5" fill="#8A8F99">GROUP</text>
 
   <!-- ===================== LAYER 1: 用户接入层 ===================== -->
   <g>
