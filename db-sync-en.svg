@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="600" viewBox="0 0 1500 600" font-family="'Helvetica Neue','Arial',sans-serif">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FAFBFC"/>
+      <stop offset="1" stop-color="#EEF0F4"/>
+    </linearGradient>
+    <linearGradient id="dbBody" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#2E5BEA"/>
+      <stop offset="1" stop-color="#0A3CD9"/>
+    </linearGradient>
+    <linearGradient id="dbBodyGray" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#BCC2CC"/>
+      <stop offset="1" stop-color="#8A8F99"/>
+    </linearGradient>
+    <linearGradient id="chev" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#FF6A00"/>
+      <stop offset="1" stop-color="#0A3CD9"/>
+    </linearGradient>
+    <filter id="sh" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="5" stdDeviation="6" flood-color="#7c8597" flood-opacity="0.35"/>
+    </filter>
+
+    <!-- reusable document icon (blue/orange) -->
+    <g id="doc">
+      <path d="M0,0 H30 L44,14 V56 H0 Z" fill="#FFFFFF" stroke="#FF6A00" stroke-width="2.5" stroke-linejoin="round"/>
+      <path d="M30,0 V14 H44" fill="none" stroke="#FF6A00" stroke-width="2.5" stroke-linejoin="round"/>
+      <line x1="8" y1="26" x2="36" y2="26" stroke="#FF6A00" stroke-width="3" stroke-linecap="round"/>
+      <line x1="8" y1="36" x2="36" y2="36" stroke="#FF6A00" stroke-width="3" stroke-linecap="round"/>
+      <line x1="8" y1="46" x2="28" y2="46" stroke="#FF6A00" stroke-width="3" stroke-linecap="round"/>
+    </g>
+    <g id="docGray">
+      <path d="M0,0 H30 L44,14 V56 H0 Z" fill="#FFFFFF" stroke="#6B7280" stroke-width="2.5" stroke-linejoin="round"/>
+      <path d="M30,0 V14 H44" fill="none" stroke="#6B7280" stroke-width="2.5" stroke-linejoin="round"/>
+      <line x1="8" y1="26" x2="36" y2="26" stroke="#9aa0aa" stroke-width="3" stroke-linecap="round"/>
+      <line x1="8" y1="36" x2="36" y2="36" stroke="#9aa0aa" stroke-width="3" stroke-linecap="round"/>
+      <line x1="8" y1="46" x2="28" y2="46" stroke="#9aa0aa" stroke-width="3" stroke-linecap="round"/>
+    </g>
+  </defs>
+
+  <rect x="0" y="0" width="1500" height="600" fill="url(#bg)"/>
+
+  <!-- title -->
+  <text x="60" y="72" font-size="44" font-weight="700" fill="#0A3CD9">Database Auto-Synchronization</text>
+  <text x="62" y="102" font-size="18" fill="#6B7280">Primary-to-Replica Replication</text>
+
+  <!-- brand -->
+  <text x="1150" y="50" font-size="22" font-weight="800" fill="#0A3CD9" letter-spacing="0.5">ALIBABA CLOUD</text>
+  <text x="1150" y="78" font-size="22" font-weight="800" letter-spacing="0.5" fill="#0A3CD9">INTELLIGENCE</text>
+  <text x="1352" y="78" font-size="22" font-weight="800" letter-spacing="0.5" fill="#8A8F99">GROUP</text>
+
+  <!-- ========== PRIMARY DB (cx=290) ========== -->
+  <g filter="url(#sh)">
+    <path d="M220,300 L220,410 A70,22 0 0 0 360,410 L360,300 Z" fill="url(#dbBody)"/>
+  </g>
+  <ellipse cx="290" cy="300" rx="70" ry="22" fill="#5A82F2"/>
+  <path d="M220,338 A70,22 0 0 0 360,338" fill="none" stroke="#FFFFFF" stroke-opacity="0.25" stroke-width="2"/>
+  <path d="M220,374 A70,22 0 0 0 360,374" fill="none" stroke="#FFFFFF" stroke-opacity="0.25" stroke-width="2"/>
+  <use href="#doc" x="268" y="326"/>
+  <text x="290" y="468" text-anchor="middle" font-size="24" font-weight="700" fill="#0A3CD9">Primary</text>
+  <text x="290" y="494" text-anchor="middle" font-size="15" fill="#8A8F99">Master DB</text>
+  <!-- highlight star -->
+  <text x="333" y="288" font-size="26" fill="#0A3CD9">★</text>
+
+  <!-- ========== SYNC ARROWS (left-pointing chevrons) ========== -->
+  <text x="595" y="290" text-anchor="middle" font-size="26" font-weight="700" fill="#0A3CD9">Sync</text>
+  <g fill="none" stroke="url(#chev)" stroke-width="11" stroke-linecap="round" stroke-linejoin="round">
+    <polyline points="540,332 512,358 540,384"/>
+    <polyline points="580,332 552,358 580,384"/>
+    <polyline points="620,332 592,358 620,384"/>
+    <polyline points="660,332 632,358 660,384"/>
+  </g>
+  <text x="595" y="430" text-anchor="middle" font-size="17" fill="#6B7280">automatically</text>
+
+  <!-- ========== COPY3 (cx=880) ========== -->
+  <g filter="url(#sh)">
+    <path d="M810,300 L810,410 A70,22 0 0 0 950,410 L950,300 Z" fill="url(#dbBody)"/>
+  </g>
+  <ellipse cx="880" cy="300" rx="70" ry="22" fill="#5A82F2"/>
+  <path d="M810,338 A70,22 0 0 0 950,338" fill="none" stroke="#FFFFFF" stroke-opacity="0.25" stroke-width="2"/>
+  <path d="M810,374 A70,22 0 0 0 950,374" fill="none" stroke="#FFFFFF" stroke-opacity="0.25" stroke-width="2"/>
+  <use href="#doc" x="858" y="326"/>
+  <text x="880" y="468" text-anchor="middle" font-size="24" font-weight="600" fill="#1A1A1A">copy3</text>
+  <text x="880" y="494" text-anchor="middle" font-size="15" fill="#8A8F99">Replica</text>
+
+  <!-- ========== COPY2 (cx=1140) ========== -->
+  <g filter="url(#sh)">
+    <path d="M1070,300 L1070,410 A70,22 0 0 0 1210,410 L1210,300 Z" fill="url(#dbBody)"/>
+  </g>
+  <ellipse cx="1140" cy="300" rx="70" ry="22" fill="#5A82F2"/>
+  <path d="M1070,338 A70,22 0 0 0 1210,338" fill="none" stroke="#FFFFFF" stroke-opacity="0.25" stroke-width="2"/>
+  <path d="M1070,374 A70,22 0 0 0 1210,374" fill="none" stroke="#FFFFFF" stroke-opacity="0.25" stroke-width="2"/>
+  <use href="#doc" x="1118" y="326"/>
+  <text x="1140" y="468" text-anchor="middle" font-size="24" font-weight="600" fill="#1A1A1A">copy2</text>
+  <text x="1140" y="494" text-anchor="middle" font-size="15" fill="#8A8F99">Replica</text>
+
+  <!-- ========== COPY1 (cx=1400, FAILED) ========== -->
+  <g filter="url(#sh)">
+    <path d="M1330,300 L1330,410 A70,22 0 0 0 1470,410 L1470,300 Z" fill="url(#dbBodyGray)"/>
+  </g>
+  <ellipse cx="1400" cy="300" rx="70" ry="22" fill="#C6CBD3"/>
+  <path d="M1330,338 A70,22 0 0 0 1470,338" fill="none" stroke="#FFFFFF" stroke-opacity="0.25" stroke-width="2"/>
+  <path d="M1330,374 A70,22 0 0 0 1470,374" fill="none" stroke="#FFFFFF" stroke-opacity="0.25" stroke-width="2"/>
+  <use href="#docGray" x="1378" y="326"/>
+  <text x="1400" y="468" text-anchor="middle" font-size="24" font-weight="600" fill="#8A8F99">copy1</text>
+  <text x="1400" y="494" text-anchor="middle" font-size="15" font-weight="700" fill="#FF6A00">Failed</text>
+  <!-- failure mark -->
+  <circle cx="1445" cy="292" r="23" fill="#FF6A00" stroke="#FFFFFF" stroke-width="3"/>
+  <path d="M1436,283 L1454,301 M1454,283 L1436,301" stroke="#FFFFFF" stroke-width="4.5" stroke-linecap="round"/>
+</svg>
