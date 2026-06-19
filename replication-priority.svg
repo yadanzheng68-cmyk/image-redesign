@@ -80,25 +80,20 @@
   <g>
     <rect x="360" y="540" width="100" height="320" fill="#FFFFFF" stroke="#E0822C" stroke-width="2"/>
     <rect x="360" y="652" width="100" height="208" fill="#EE7F1A"/>
-    <line x1="360" y1="566" x2="460" y2="566" stroke="#E0822C" stroke-width="1.5"/>
     <rect x="495" y="540" width="100" height="320" fill="#FFFFFF" stroke="#E0822C" stroke-width="2"/>
     <rect x="495" y="652" width="100" height="208" fill="#EE7F1A"/>
-    <line x1="495" y1="566" x2="595" y2="566" stroke="#E0822C" stroke-width="1.5"/>
     <text x="650" y="724" text-anchor="middle" font-size="30" font-weight="700" fill="#8A8F99">...</text>
     <rect x="705" y="540" width="100" height="320" fill="#FFFFFF" stroke="#E0822C" stroke-width="2"/>
     <rect x="705" y="652" width="100" height="208" fill="#EE7F1A"/>
-    <line x1="705" y1="566" x2="805" y2="566" stroke="#E0822C" stroke-width="1.5"/>
   </g>
+  <!-- Free/Allocable grouped with a bracket over the empty (white) region -->
+  <path d="M353,542 H341 V650 H353" fill="none" stroke="#5C9E3F" stroke-width="1.8"/>
   <g font-size="21" fill="#5C9E3F" text-anchor="end">
-    <text x="330" y="558">Free</text>
-    <text x="330" y="586">Allocable</text>
-    <text x="330" y="762">Used</text>
+    <text x="333" y="588">Free</text>
+    <text x="333" y="614">Allocable</text>
+    <text x="333" y="762">Used</text>
   </g>
-  <g stroke="#5C9E3F" stroke-width="1.5">
-    <line x1="338" y1="552" x2="360" y2="552"/>
-    <line x1="338" y1="580" x2="360" y2="580"/>
-    <line x1="338" y1="756" x2="360" y2="756"/>
-  </g>
+  <line x1="341" y1="756" x2="360" y2="756" stroke="#5C9E3F" stroke-width="1.5"/>
 
   <!-- New Data Nodes: 2 bars -->
   <g>
