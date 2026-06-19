@@ -20,12 +20,12 @@
     </symbol>
     <!-- orange OSS storage stack -->
     <symbol id="oss" viewBox="0 0 84 104">
-      <path d="M4,18 V40 A38,12 0 0 0 80,40 V18 Z" fill="url(#ossG)"/>
-      <path d="M4,44 V64 A38,12 0 0 0 80,64 V44 Z" fill="url(#ossG)"/>
-      <path d="M4,70 V90 A38,12 0 0 0 80,90 V70 Z" fill="url(#ossG)"/>
-      <ellipse cx="42" cy="18" rx="38" ry="12" fill="#FFAE6B"/>
-      <ellipse cx="42" cy="44" rx="38" ry="12" fill="#FFAE6B"/>
-      <ellipse cx="42" cy="70" rx="38" ry="12" fill="#FFAE6B"/>
+      <path d="M6,14 V90 A36,13 0 0 0 78,90 V14 Z" fill="url(#ossG)"/>
+      <ellipse cx="42" cy="14" rx="36" ry="13" fill="#FF9A52"/>
+      <ellipse cx="42" cy="14" rx="36" ry="13" fill="none" stroke="#FFFFFF" stroke-opacity="0.5" stroke-width="1.5"/>
+      <path d="M6,36 A36,13 0 0 0 78,36" fill="none" stroke="#FFFFFF" stroke-width="2.5" stroke-opacity="0.85"/>
+      <path d="M6,55 A36,13 0 0 0 78,55" fill="none" stroke="#FFFFFF" stroke-width="2.5" stroke-opacity="0.85"/>
+      <path d="M6,74 A36,13 0 0 0 78,74" fill="none" stroke="#FFFFFF" stroke-width="2.5" stroke-opacity="0.85"/>
     </symbol>
   </defs>
 

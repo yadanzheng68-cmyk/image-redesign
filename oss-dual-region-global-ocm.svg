@@ -98,8 +98,10 @@
     <text x="1250" y="662">KV, Pangu, OSS</text><text x="1250" y="686">Sync Service</text>
   </g>
   <g fill="none" stroke="#3A6BF0" stroke-width="2">
-    <line x1="200" y1="374" x2="215" y2="610" marker-end="url(#aB)"/>
-    <line x1="1300" y1="374" x2="1285" y2="610" marker-end="url(#aB)"/>
+    <line x1="200"  y1="374" x2="205"  y2="614" marker-start="url(#aBs)" marker-end="url(#aB)"/>
+    <line x1="410"  y1="374" x2="300"  y2="614" marker-start="url(#aBs)" marker-end="url(#aB)"/>
+    <line x1="1090" y1="374" x2="1195" y2="614" marker-start="url(#aBs)" marker-end="url(#aB)"/>
+    <line x1="1300" y1="374" x2="1290" y2="614" marker-start="url(#aBs)" marker-end="url(#aB)"/>
   </g>
 
   <!-- data sync -->

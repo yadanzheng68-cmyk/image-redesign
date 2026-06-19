@@ -2,6 +2,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1300" height="1200" viewBox="0 0 1300 1200" font-family="'Helvetica Neue','Arial',sans-serif">
   <defs>
     <marker id="aB" markerWidth="11" markerHeight="11" refX="7" refY="5" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L9,5 L0,10 Z" fill="#3A6BF0"/></marker>
+    <marker id="aBs" markerWidth="11" markerHeight="11" refX="2" refY="5" orient="auto" markerUnits="userSpaceOnUse"><path d="M9,0 L0,5 L9,10 Z" fill="#3A6BF0"/></marker>
     <marker id="aY" markerWidth="11" markerHeight="11" refX="7" refY="5" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L9,5 L0,10 Z" fill="#E0A21A"/></marker>
     <marker id="aK" markerWidth="12" markerHeight="12" refX="8" refY="5" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L10,5 L0,10 Z" fill="#1A1A1A"/></marker>
     <marker id="aKs" markerWidth="12" markerHeight="12" refX="2" refY="5" orient="auto" markerUnits="userSpaceOnUse"><path d="M10,0 L0,5 L10,10 Z" fill="#1A1A1A"/></marker>
@@ -86,8 +87,10 @@
     <text x="1070" y="456">KV, Pangu, OSS</text><text x="1070" y="476">Sync Service</text>
   </g>
   <g fill="none" stroke="#3A6BF0" stroke-width="2">
-    <line x1="200" y1="272" x2="205" y2="408" marker-end="url(#aB)"/>
-    <line x1="1090" y1="272" x2="1085" y2="408" marker-end="url(#aB)"/>
+    <line x1="210"  y1="272" x2="200"  y2="412" marker-start="url(#aBs)" marker-end="url(#aB)"/>
+    <line x1="380"  y1="272" x2="285"  y2="412" marker-start="url(#aBs)" marker-end="url(#aB)"/>
+    <line x1="910"  y1="272" x2="1010" y2="412" marker-start="url(#aBs)" marker-end="url(#aB)"/>
+    <line x1="1080" y1="272" x2="1115" y2="412" marker-start="url(#aBs)" marker-end="url(#aB)"/>
   </g>
   <text x="300" y="540" text-anchor="middle" font-size="18" fill="#1A1A1A">Bucket A</text>
   <text x="1000" y="540" text-anchor="middle" font-size="18" fill="#1A1A1A">Bucket A'</text>
@@ -124,7 +127,10 @@
     <line x1="773" y1="838" x2="572" y2="968" marker-end="url(#aY)"/>
     <line x1="784" y1="852" x2="732" y2="968" marker-end="url(#aY)"/>
   </g>
-  <line x1="520" y1="925" x2="515" y2="958" stroke="#3A6BF0" stroke-width="2" marker-end="url(#aB)"/>
+  <g fill="none" stroke="#3A6BF0" stroke-width="2">
+    <line x1="510" y1="958" x2="515" y2="920" marker-start="url(#aBs)" marker-end="url(#aB)"/>
+    <line x1="670" y1="958" x2="585" y2="920" marker-start="url(#aBs)" marker-end="url(#aB)"/>
+  </g>
   <!-- LVS C -->
   <rect x="565" y="1058" width="110" height="46" rx="3" fill="#FFFFFF" stroke="#3A6BF0" stroke-width="2"/><text x="620" y="1088" text-anchor="middle" font-size="20" fill="#1A1A1A">LVS</text>
   <polygon points="470,1071 520,1071 520,1066 538,1081 520,1096 520,1091 470,1091" fill="none" stroke="#2E5BEA" stroke-width="2"/>
