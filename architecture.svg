@@ -18,7 +18,7 @@
   </defs>
 
   <!-- background -->
-  <rect x="0" y="0" width="1600" height="1010" fill="url(#bg)"/>
+  <rect x="0" y="0" width="1600" height="1010" fill="#FFFFFF"/>
 
   <!-- title -->
   <text x="60" y="68" font-size="46" font-weight="700" fill="#0A3CD9">AI 大模型云平台架构</text>

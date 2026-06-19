@@ -17,7 +17,7 @@
       <path d="M40,22 L58,40 L40,58 L22,40 Z" fill="#FFFFFF" fill-opacity="0.28"/>
     </symbol>
   </defs>
-  <rect x="0" y="0" width="1500" height="560" fill="url(#bg)"/>
+  <rect x="0" y="0" width="1500" height="560" fill="#FFFFFF"/>
 
   <!-- ================= LEFT SCENE (healthy) ================= -->
   <g>

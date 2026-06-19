@@ -71,7 +71,7 @@
     </symbol>
   </defs>
 
-  <rect x="0" y="0" width="1460" height="1380" fill="url(#bg)"/>
+  <rect x="0" y="0" width="1460" height="1380" fill="#FFFFFF"/>
 
   <!-- ===== TITLE BANNER ===== -->
   <rect x="0" y="0" width="1460" height="96" fill="#0A3CD9"/>

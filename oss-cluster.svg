@@ -27,7 +27,7 @@
     </symbol>
   </defs>
 
-  <rect x="0" y="0" width="1040" height="1380" fill="url(#bg)"/>
+  <rect x="0" y="0" width="1040" height="1380" fill="#FFFFFF"/>
 
   <!-- header -->
   <text x="60" y="58" font-size="40" font-weight="700" fill="#0A3CD9">OSS Cluster Architecture</text>

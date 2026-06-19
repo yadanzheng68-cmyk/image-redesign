@@ -6,7 +6,7 @@
       <stop offset="1" stop-color="#EEF0F4"/>
     </linearGradient>
   </defs>
-  <rect x="0" y="0" width="1440" height="560" fill="url(#bg)"/>
+  <rect x="0" y="0" width="1440" height="560" fill="#FFFFFF"/>
 
   <!-- header -->
   <text x="60" y="56" font-size="34" font-weight="700" fill="#0A3CD9">Incremental Snapshots</text>
