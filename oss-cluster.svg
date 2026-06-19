@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1040" height="1380" viewBox="0 0 1040 1380" font-family="'Helvetica Neue','Arial',sans-serif">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FAFBFC"/>
+      <stop offset="1" stop-color="#EEF0F4"/>
+    </linearGradient>
+    <linearGradient id="srvG" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#3A6BF0"/>
+      <stop offset="1" stop-color="#0A3CD9"/>
+    </linearGradient>
+    <linearGradient id="cylG" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#3A6BF0"/>
+      <stop offset="1" stop-color="#0A3CD9"/>
+    </linearGradient>
+    <marker id="ah" markerWidth="13" markerHeight="13" refX="8" refY="5" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M0,0 L10,5 L0,10 Z" fill="#0A3CD9"/>
+    </marker>
+
+    <!-- server tower icon -->
+    <symbol id="srv" viewBox="0 0 44 66">
+      <rect x="2" y="2" width="40" height="62" rx="5" fill="url(#srvG)"/>
+      <rect x="9" y="10" width="26" height="5" rx="2.5" fill="#FFFFFF" fill-opacity="0.9"/>
+      <rect x="9" y="21" width="26" height="5" rx="2.5" fill="#FFFFFF" fill-opacity="0.6"/>
+      <rect x="20" y="50" width="15" height="5" rx="2.5" fill="#FFFFFF" fill-opacity="0.5"/>
+      <circle cx="13" cy="52.5" r="3.5" fill="#FF6A00"/>
+    </symbol>
+  </defs>
+
+  <rect x="0" y="0" width="1040" height="1380" fill="url(#bg)"/>
+
+  <!-- header -->
+  <text x="60" y="58" font-size="40" font-weight="700" fill="#0A3CD9">OSS Cluster Architecture</text>
+  <text x="62" y="86" font-size="16" fill="#6B7280">Object Storage Service — Cluster Topology</text>
+  <text x="760" y="44" font-size="20" font-weight="800" fill="#0A3CD9" letter-spacing="0.5">ALIBABA CLOUD</text>
+  <text x="760" y="70" font-size="20" font-weight="800" fill="#0A3CD9" letter-spacing="0.5">INTELLIGENCE</text>
+  <text x="945" y="70" font-size="20" font-weight="800" fill="#8A8F99" letter-spacing="0.5">GROUP</text>
+
+  <!-- ===== TOP ACCESS BOX ===== -->
+  <rect x="70" y="120" width="900" height="160" rx="14" fill="#FFFFFF" stroke="#9AA3B2" stroke-width="2" stroke-dasharray="8 6"/>
+
+  <!-- App icon -->
+  <g transform="translate(230,180)">
+    <rect x="-30" y="-26" width="22" height="22" rx="3" fill="none" stroke="#0A3CD9" stroke-width="3"/>
+    <rect x="2" y="-30" width="22" height="22" rx="3" fill="#0A3CD9" transform="rotate(45 13 -19)"/>
+    <rect x="-30" y="2" width="22" height="22" rx="3" fill="#0A3CD9"/>
+    <rect x="2" y="2" width="22" height="22" rx="3" fill="none" stroke="#0A3CD9" stroke-width="3"/>
+  </g>
+  <text x="230" y="258" text-anchor="middle" font-size="22" fill="#1A1A1A">App</text>
+
+  <!-- ECS icon (stacked) -->
+  <g transform="translate(520,180)">
+    <rect x="-32" y="-30" width="64" height="17" rx="4" fill="#0A3CD9"/>
+    <circle cx="-22" cy="-21.5" r="3.5" fill="#FFFFFF"/>
+    <rect x="-32" y="-8" width="64" height="17" rx="4" fill="#0A3CD9"/>
+    <circle cx="-22" cy="0.5" r="3.5" fill="#FFFFFF"/>
+    <rect x="-32" y="14" width="64" height="17" rx="4" fill="#0A3CD9"/>
+    <circle cx="-22" cy="22.5" r="3.5" fill="#FFFFFF"/>
+  </g>
+  <text x="520" y="258" text-anchor="middle" font-size="22" fill="#1A1A1A">ECS</text>
+
+  <!-- RDS icon (cylinder) -->
+  <g transform="translate(810,182)">
+    <path d="M-26,-18 L-26,18 A26,9 0 0 0 26,18 L26,-18 Z" fill="url(#cylG)"/>
+    <ellipse cx="0" cy="-18" rx="26" ry="9" fill="#3A6BF0"/>
+    <path d="M-26,0 A26,9 0 0 0 26,0" fill="none" stroke="#FFFFFF" stroke-opacity="0.35" stroke-width="2"/>
+  </g>
+  <text x="810" y="258" text-anchor="middle" font-size="22" fill="#1A1A1A">RDS</text>
+
+  <!-- arrow ECS -> SLB -->
+  <line x1="520" y1="282" x2="520" y2="326" stroke="#0A3CD9" stroke-width="3" marker-end="url(#ah)"/>
+
+  <!-- ===== SLB BOX ===== -->
+  <rect x="330" y="330" width="380" height="110" rx="14" fill="#FFFFFF" stroke="#9AA3B2" stroke-width="2" stroke-dasharray="8 6"/>
+  <g transform="translate(455,385)">
+    <line x1="0" y1="0" x2="-24" y2="-15" stroke="#0A3CD9" stroke-width="3"/>
+    <line x1="0" y1="0" x2="24" y2="-15" stroke="#0A3CD9" stroke-width="3"/>
+    <line x1="0" y1="0" x2="0" y2="22" stroke="#0A3CD9" stroke-width="3"/>
+    <circle cx="0" cy="0" r="11" fill="#0A3CD9"/>
+    <circle cx="-24" cy="-15" r="8" fill="#0A3CD9"/>
+    <circle cx="24" cy="-15" r="8" fill="#0A3CD9"/>
+    <circle cx="0" cy="22" r="8" fill="#0A3CD9"/>
+  </g>
+  <text x="505" y="393" font-size="22" fill="#1A1A1A">SLB cluster</text>
+
+  <!-- arrow SLB -> WS&PM -->
+  <line x1="520" y1="440" x2="520" y2="556" stroke="#0A3CD9" stroke-width="3" marker-end="url(#ah)"/>
+
+  <!-- ===== OSS CLUSTER (orange highlight) ===== -->
+  <rect x="45" y="500" width="950" height="850" rx="18" fill="#FF6A00" fill-opacity="0.03" stroke="#FF6A00" stroke-width="3" stroke-dasharray="12 8"/>
+  <text x="85" y="548" font-size="26" font-weight="800" fill="#FF6A00">OSS cluster</text>
+
+  <!-- WS&PM box -->
+  <rect x="340" y="560" width="380" height="140" rx="12" fill="#FFFFFF" stroke="#9AA3B2" stroke-width="2" stroke-dasharray="8 6"/>
+  <use href="#srv" x="413" y="597" width="44" height="66"/>
+  <use href="#srv" x="583" y="597" width="44" height="66"/>
+  <g fill="#2B2F36"><circle cx="505" cy="630" r="5"/><circle cx="522" cy="630" r="5"/><circle cx="539" cy="630" r="5"/></g>
+  <text x="745" y="638" font-size="22" font-weight="600" fill="#1A1A1A">WS&amp;PM</text>
+
+  <!-- arrows from WS&PM -->
+  <line x1="480" y1="700" x2="480" y2="816" stroke="#0A3CD9" stroke-width="3" marker-end="url(#ah)"/>
+  <line x1="650" y1="700" x2="812" y2="832" stroke="#0A3CD9" stroke-width="3" marker-end="url(#ah)"/>
+
+  <!-- Apsara label + arrow -->
+  <text x="60" y="868" font-size="16" fill="#1A1A1A">Apsara Name Service</text>
+  <text x="60" y="892" font-size="16" fill="#1A1A1A">and Distributed Lock</text>
+  <text x="60" y="916" font-size="16" fill="#1A1A1A">Synchronization System</text>
+  <line x1="258" y1="900" x2="334" y2="900" stroke="#0A3CD9" stroke-width="3" marker-end="url(#ah)"/>
+
+  <!-- KV cluster box -->
+  <rect x="340" y="820" width="380" height="150" rx="12" fill="#FFFFFF" stroke="#9AA3B2" stroke-width="2" stroke-dasharray="8 6"/>
+  <text x="530" y="853" text-anchor="middle" font-size="22" font-weight="600" fill="#1A1A1A">KV cluster</text>
+  <use href="#srv" x="413" y="872" width="44" height="66"/>
+  <use href="#srv" x="583" y="872" width="44" height="66"/>
+  <g fill="#2B2F36"><circle cx="505" cy="905" r="5"/><circle cx="522" cy="905" r="5"/><circle cx="539" cy="905" r="5"/></g>
+
+  <!-- OCM box -->
+  <rect x="770" y="845" width="180" height="120" rx="12" fill="#FFFFFF" stroke="#9AA3B2" stroke-width="2" stroke-dasharray="8 6"/>
+  <text x="860" y="835" text-anchor="middle" font-size="20" font-weight="600" fill="#1A1A1A">OCM</text>
+  <use href="#srv" x="798" y="875" width="40" height="60"/>
+  <use href="#srv" x="882" y="875" width="40" height="60"/>
+
+  <!-- arrow KV -> Storage -->
+  <line x1="530" y1="970" x2="530" y2="1076" stroke="#0A3CD9" stroke-width="3" marker-end="url(#ah)"/>
+
+  <!-- Storage cluster box -->
+  <rect x="190" y="1080" width="660" height="230" rx="12" fill="#FFFFFF" stroke="#9AA3B2" stroke-width="2" stroke-dasharray="8 6"/>
+  <text x="520" y="1120" text-anchor="middle" font-size="22" font-weight="600" fill="#1A1A1A">Storage cluster</text>
+
+  <!-- Paxos / Master triangle -->
+  <g stroke="#0A3CD9" stroke-width="2.5">
+    <line x1="330" y1="1165" x2="282" y2="1248"/>
+    <line x1="330" y1="1165" x2="378" y2="1248"/>
+    <line x1="282" y1="1248" x2="378" y2="1248"/>
+  </g>
+  <use href="#srv" x="308" y="1135" width="44" height="60"/>
+  <use href="#srv" x="260" y="1220" width="44" height="60"/>
+  <use href="#srv" x="356" y="1220" width="44" height="60"/>
+  <text x="330" y="1248" text-anchor="middle" font-size="17" font-weight="700" fill="#0A3CD9">Paxos</text>
+  <text x="330" y="1295" text-anchor="middle" font-size="18" fill="#1A1A1A">Master</text>
+
+  <!-- double arrow Master <-> ChunkServer -->
+  <line x1="448" y1="1205" x2="648" y2="1205" stroke="#0A3CD9" stroke-width="3.5" marker-start="url(#ah)" marker-end="url(#ah)"/>
+
+  <!-- ChunkServer -->
+  <use href="#srv" x="688" y="1175" width="44" height="60"/>
+  <use href="#srv" x="800" y="1175" width="44" height="60"/>
+  <g fill="#2B2F36"><circle cx="752" cy="1205" r="5"/><circle cx="769" cy="1205" r="5"/><circle cx="786" cy="1205" r="5"/></g>
+  <text x="765" y="1295" text-anchor="middle" font-size="18" fill="#1A1A1A">ChunkServer</text>
+</svg>
