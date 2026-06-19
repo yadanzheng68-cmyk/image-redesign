@@ -8,7 +8,7 @@
     <marker id="aB" markerWidth="14" markerHeight="14" refX="8" refY="5" orient="auto" markerUnits="userSpaceOnUse">
       <path d="M0,0 L11,5 L0,10 Z" fill="#0A3CD9"/>
     </marker>
-    <marker id="aO" markerWidth="14" markerHeight="14" refX="8" refY="5" orient="auto" markerUnits="userSpaceOnUse">
+    <marker id="aO" markerWidth="14" markerHeight="14" refX="8" refY="5" orient="auto-start-reverse" markerUnits="userSpaceOnUse">
       <path d="M0,0 L11,5 L0,10 Z" fill="#FF6A00"/>
     </marker>
     <symbol id="ecs" viewBox="0 0 70 64">
@@ -59,7 +59,7 @@
   <text x="600" y="506" text-anchor="middle" font-size="24" fill="#2B2F36">replication</text>
 
   <!-- failover / data restoration dashed curve back -->
-  <path d="M845,720 Q600,820 355,720" fill="none" stroke="#FF6A00" stroke-width="3" stroke-dasharray="9 7" marker-end="url(#aO)"/>
+  <path d="M845,720 Q600,820 355,720" fill="none" stroke="#FF6A00" stroke-width="3" stroke-dasharray="9 7" marker-start="url(#aO)" marker-end="url(#aO)"/>
   <text x="600" y="760" text-anchor="middle" font-size="24" fill="#2B2F36">Failover</text>
   <text x="600" y="790" text-anchor="middle" font-size="24" fill="#2B2F36">Data restoration</text>
 </svg>
