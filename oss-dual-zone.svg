@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="1000" viewBox="0 0 1500 1000" font-family="'Helvetica Neue','Arial',sans-serif">
+  <defs>
+    <marker id="aB" markerWidth="12" markerHeight="12" refX="8" refY="5" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L10,5 L0,10 Z" fill="#3A6BF0"/></marker>
+    <marker id="aY" markerWidth="12" markerHeight="12" refX="8" refY="5" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L10,5 L0,10 Z" fill="#E0A21A"/></marker>
+    <marker id="aK" markerWidth="12" markerHeight="12" refX="8" refY="5" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L10,5 L0,10 Z" fill="#1A1A1A"/></marker>
+    <marker id="aKs" markerWidth="12" markerHeight="12" refX="2" refY="5" orient="auto" markerUnits="userSpaceOnUse"><path d="M10,0 L0,5 L10,10 Z" fill="#1A1A1A"/></marker>
+    <marker id="aR" markerWidth="11" markerHeight="11" refX="7" refY="5" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L9,5 L0,10 Z" fill="#E23B2E"/></marker>
+    <marker id="aRs" markerWidth="11" markerHeight="11" refX="2" refY="5" orient="auto" markerUnits="userSpaceOnUse"><path d="M9,0 L0,5 L9,10 Z" fill="#E23B2E"/></marker>
+    <symbol id="bucket" viewBox="0 0 200 150">
+      <path d="M28,30 H188 V140 Q108,158 28,140 Z" fill="#FFFFFF" stroke="#5B9BD5" stroke-width="2"/>
+      <path d="M14,20 H174 V130 Q94,148 14,130 Z" fill="#FFFFFF" stroke="#5B9BD5" stroke-width="2"/>
+      <path d="M0,10 H160 V120 Q80,138 0,120 Z" fill="#FFFFFF" stroke="#5B9BD5" stroke-width="2"/>
+    </symbol>
+  </defs>
+  <rect x="0" y="0" width="1500" height="1000" fill="#FFFFFF"/>
+
+  <!-- center divider -->
+  <line x1="750" y1="70" x2="750" y2="930" stroke="#9AA3B2" stroke-width="1.5" stroke-dasharray="14 6 3 6"/>
+
+  <!-- external request arrows -->
+  <polygon points="288,70 312,70 312,100 322,100 300,124 278,100 288,100" fill="#2E5BEA"/>
+  <text x="340" y="92" font-size="22" fill="#1A1A1A">External Request</text>
+  <polygon points="1188,70 1212,70 1212,100 1222,100 1200,124 1178,100 1188,100" fill="none" stroke="#2E5BEA" stroke-width="2"/>
+
+  <!-- zone boxes -->
+  <rect x="70"  y="250" width="600" height="600" rx="14" fill="none" stroke="#5A6270" stroke-width="2" stroke-dasharray="10 8"/>
+  <rect x="830" y="250" width="600" height="600" rx="14" fill="none" stroke="#5A6270" stroke-width="2" stroke-dasharray="10 8"/>
+
+  <!-- LVS -->
+  <rect x="235"  y="126" width="130" height="56" rx="3" fill="#FFFFFF" stroke="#3A6BF0" stroke-width="2"/><text x="300"  y="161" text-anchor="middle" font-size="24" fill="#1A1A1A">LVS</text>
+  <rect x="1135" y="126" width="130" height="56" rx="3" fill="#FFFFFF" stroke="#3A6BF0" stroke-width="2"/><text x="1200" y="161" text-anchor="middle" font-size="24" fill="#1A1A1A">LVS</text>
+
+  <!-- OSS servers -->
+  <g fill="#FFFFFF" stroke="#3A6BF0" stroke-width="2">
+    <rect x="150"  y="300" width="140" height="74" rx="3"/>
+    <rect x="360"  y="300" width="140" height="74" rx="3"/>
+    <rect x="1000" y="300" width="140" height="74" rx="3"/>
+    <rect x="1210" y="300" width="140" height="74" rx="3"/>
+  </g>
+  <g text-anchor="middle" font-size="20" fill="#1A1A1A">
+    <text x="220" y="332">OSS</text><text x="220" y="356">Server</text>
+    <text x="430" y="332">OSS</text><text x="430" y="356">Server</text>
+    <text x="1070" y="332">OSS</text><text x="1070" y="356">Server</text>
+    <text x="1280" y="332">OSS</text><text x="1280" y="356">Server</text>
+  </g>
+  <!-- LVS -> servers -->
+  <g fill="none" stroke="#3A6BF0" stroke-width="2">
+    <line x1="290" y1="182" x2="225" y2="298" marker-end="url(#aB)"/>
+    <line x1="320" y1="182" x2="425" y2="298" marker-end="url(#aB)"/>
+    <line x1="1190" y1="182" x2="1075" y2="298" marker-end="url(#aB)"/>
+    <line x1="1210" y1="182" x2="1285" y2="298" marker-end="url(#aB)"/>
+  </g>
+
+  <!-- cluster labels -->
+  <text x="90" y="470" font-size="20" fill="#1A1A1A">OSS</text><text x="90" y="494" font-size="20" fill="#1A1A1A">Main</text><text x="90" y="518" font-size="20" fill="#1A1A1A">Cluster</text>
+  <text x="1410" y="470" text-anchor="end" font-size="20" fill="#1A1A1A">OSS</text><text x="1410" y="494" text-anchor="end" font-size="20" fill="#1A1A1A">Backup</text><text x="1410" y="518" text-anchor="end" font-size="20" fill="#1A1A1A">Cluster</text>
+
+  <!-- OCM shared box -->
+  <rect x="470" y="402" width="560" height="116" rx="6" fill="none" stroke="#5A6270" stroke-width="1.5" stroke-dasharray="7 6"/>
+  <path d="M515,425 h90 l14,33 -14,33 h-90 l-14,-33 z" fill="#FFFFFF" stroke="#3A6BF0" stroke-width="2"/><text x="560" y="466" text-anchor="middle" font-size="20" fill="#1A1A1A">OCM</text>
+  <path d="M895,425 h90 l14,33 -14,33 h-90 l-14,-33 z" fill="#FFFFFF" stroke="#3A6BF0" stroke-width="2"/><text x="940" y="466" text-anchor="middle" font-size="20" fill="#1A1A1A">OCM</text>
+  <!-- yellow OCM -> servers -->
+  <g fill="none" stroke="#E0A21A" stroke-width="2">
+    <line x1="515" y1="450" x2="288" y2="368" marker-end="url(#aY)"/>
+    <line x1="520" y1="458" x2="498" y2="368" marker-end="url(#aY)"/>
+    <line x1="985" y1="450" x2="1212" y2="368" marker-end="url(#aY)"/>
+    <line x1="980" y1="458" x2="1002" y2="368" marker-end="url(#aY)"/>
+  </g>
+
+  <!-- RDS shared box -->
+  <rect x="540" y="560" width="420" height="110" rx="6" fill="none" stroke="#5A6270" stroke-width="1.5" stroke-dasharray="7 6"/>
+  <g fill="#FFFFFF" stroke="#3A6BF0" stroke-width="2">
+    <path d="M588,592 a34,12 0 0 1 68,0 v36 a34,12 0 0 1 -68,0 z"/>
+    <path d="M844,592 a34,12 0 0 1 68,0 v36 a34,12 0 0 1 -68,0 z"/>
+  </g>
+  <ellipse cx="622" cy="592" rx="34" ry="12" fill="#FFFFFF" stroke="#3A6BF0" stroke-width="2"/>
+  <ellipse cx="878" cy="592" rx="34" ry="12" fill="#FFFFFF" stroke="#3A6BF0" stroke-width="2"/>
+  <text x="622" y="624" text-anchor="middle" font-size="18" fill="#1A1A1A">RDS</text>
+  <text x="878" y="624" text-anchor="middle" font-size="18" fill="#1A1A1A">RDS</text>
+  <!-- black double arrow RDS<->RDS -->
+  <line x1="664" y1="610" x2="836" y2="610" stroke="#1A1A1A" stroke-width="2.5" marker-end="url(#aK)" marker-start="url(#aKs)"/>
+  <!-- red OCM<->RDS -->
+  <line x1="560" y1="491" x2="616" y2="582" stroke="#E23B2E" stroke-width="2" marker-end="url(#aR)" marker-start="url(#aRs)"/>
+  <line x1="940" y1="491" x2="884" y2="582" stroke="#E23B2E" stroke-width="2" marker-end="url(#aR)" marker-start="url(#aRs)"/>
+
+  <!-- buckets -->
+  <use href="#bucket" x="150" y="600" width="220" height="165"/>
+  <use href="#bucket" x="1130" y="600" width="220" height="165"/>
+  <g text-anchor="middle" font-size="18" fill="#1A1A1A">
+    <text x="250" y="660">KV, Pangu, OSS</text><text x="250" y="684">Sync Service</text>
+    <text x="1230" y="660">KV, Pangu, OSS</text><text x="1230" y="684">Sync Service</text>
+  </g>
+  <!-- servers -> buckets -->
+  <g fill="none" stroke="#3A6BF0" stroke-width="2">
+    <line x1="220" y1="374" x2="235" y2="610" marker-end="url(#aB)"/>
+    <line x1="1280" y1="374" x2="1265" y2="610" marker-end="url(#aB)"/>
+  </g>
+
+  <!-- data sync -->
+  <line x1="470" y1="800" x2="1030" y2="800" stroke="#2E5BEA" stroke-width="9" marker-end="url(#aB)" marker-start="url(#aKs)"/>
+  <text x="470" y="785" font-size="20" fill="#1A1A1A">Bucket A</text>
+  <text x="1030" y="785" text-anchor="end" font-size="20" fill="#1A1A1A">Bucket A'</text>
+  <text x="750" y="840" text-anchor="middle" font-size="20" fill="#1A1A1A">Data Sync</text>
+
+  <!-- zone labels -->
+  <text x="370" y="895" text-anchor="middle" font-size="24" font-weight="700" fill="#1A1A1A">Zone A</text>
+  <text x="1130" y="895" text-anchor="middle" font-size="24" font-weight="700" fill="#1A1A1A">Zone B</text>
+
+  <!-- brand -->
+  <text x="60" y="975" font-size="15" font-weight="800" fill="#0A3CD9" letter-spacing="0.5">ALIBABA CLOUD INTELLIGENCE</text>
+  <text x="360" y="975" font-size="15" font-weight="800" fill="#8A8F99" letter-spacing="0.5">GROUP</text>
+</svg>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="780" viewBox="0 0 1500 780" font-family="'Helvetica Neue','Arial',sans-serif">
+  <defs>
+    <linearGradient id="band" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#D6DCE6"/><stop offset="1" stop-color="#FFFFFF"/>
+    </linearGradient>
+  </defs>
+  <rect x="0" y="0" width="1500" height="780" fill="#FFFFFF"/>
+
+  <!-- brand -->
+  <text x="60" y="40" font-size="18" font-weight="800" fill="#0A3CD9" letter-spacing="0.5">ALIBABA CLOUD INTELLIGENCE</text>
+  <text x="390" y="40" font-size="18" font-weight="800" fill="#8A8F99" letter-spacing="0.5">GROUP</text>
+
+  <!-- ===== top scenario boxes ===== -->
+  <g>
+    <rect x="50"   y="62" width="240" height="84" rx="6" fill="#EEF3FF" stroke="#C7D6F7" stroke-width="1.5"/>
+    <rect x="340"  y="62" width="240" height="84" rx="6" fill="#EEF3FF" stroke="#C7D6F7" stroke-width="1.5"/>
+    <rect x="630"  y="62" width="240" height="84" rx="6" fill="#EEF3FF" stroke="#C7D6F7" stroke-width="1.5"/>
+    <rect x="920"  y="62" width="240" height="84" rx="6" fill="#EEF3FF" stroke="#C7D6F7" stroke-width="1.5"/>
+    <rect x="1210" y="62" width="240" height="84" rx="6" fill="#EEF3FF" stroke="#C7D6F7" stroke-width="1.5"/>
+  </g>
+  <g text-anchor="middle" font-size="20" fill="#234">
+    <text x="170" y="111">Big Data</text>
+    <text x="460" y="100">Media Assets</text><text x="460" y="124">and Monitoring</text>
+    <text x="750" y="100">Archiving</text><text x="750" y="124">and Backup</text>
+    <text x="1040" y="111">PACS</text>
+    <text x="1330" y="100">Cloud</text><text x="1330" y="124">Native</text>
+  </g>
+
+  <!-- ===== middle band ===== -->
+  <rect x="0" y="184" width="1500" height="96" fill="url(#band)"/>
+  <text x="750" y="232" text-anchor="middle" font-size="28"><tspan font-weight="800" fill="#0A3CD9">High-performance</tspan><tspan fill="#1A1A1A"> and</tspan></text>
+  <text x="750" y="264" text-anchor="middle" font-size="24" fill="#1A1A1A">Full-protocol Interoperability</text>
+
+  <!-- ===== bottom three columns ===== -->
+  <!-- Data Protection -->
+  <rect x="50" y="320" width="440" height="380" rx="8" fill="#FFFFFF" stroke="#D0D6E0" stroke-width="1.5"/>
+  <g>
+    <rect x="120" y="356" width="300" height="60" rx="6" fill="#ECEEF2"/>
+    <rect x="120" y="436" width="300" height="60" rx="6" fill="#ECEEF2"/>
+    <rect x="120" y="516" width="300" height="60" rx="6" fill="#ECEEF2"/>
+  </g>
+  <g text-anchor="middle" font-size="20" fill="#1A1A1A">
+    <text x="270" y="393">Audit Log</text>
+    <text x="270" y="466">Multiple</text><text x="270" y="490">Replicas</text>
+    <text x="270" y="553">EC</text>
+  </g>
+  <text x="270" y="666" text-anchor="middle" font-size="22" font-weight="700" fill="#1A1A1A">Data Protection</text>
+
+  <!-- Resource Management -->
+  <rect x="530" y="320" width="440" height="380" rx="8" fill="#FFFFFF" stroke="#D0D6E0" stroke-width="1.5"/>
+  <g>
+    <rect x="600" y="356" width="300" height="60" rx="6" fill="#DCE8FB"/>
+    <rect x="600" y="436" width="300" height="60" rx="6" fill="#DCE8FB"/>
+    <rect x="600" y="516" width="300" height="60" rx="6" fill="#DCE8FB"/>
+  </g>
+  <g text-anchor="middle" font-size="20" fill="#1A1A1A">
+    <text x="750" y="380">Capacity</text><text x="750" y="404">Quota</text>
+    <text x="750" y="460">Permission</text><text x="750" y="484">Control</text>
+    <text x="750" y="540">Auto</text><text x="750" y="564">Scaling</text>
+  </g>
+  <text x="750" y="666" text-anchor="middle" font-size="22" font-weight="700" fill="#1A1A1A">Resource Management</text>
+
+  <!-- O&M Management -->
+  <rect x="1010" y="320" width="440" height="380" rx="8" fill="#FFFFFF" stroke="#D0D6E0" stroke-width="1.5"/>
+  <g>
+    <rect x="1080" y="356" width="300" height="60" rx="6" fill="#DCE8FB"/>
+    <rect x="1080" y="436" width="300" height="60" rx="6" fill="#DCE8FB"/>
+    <rect x="1080" y="516" width="300" height="60" rx="6" fill="#DCE8FB"/>
+  </g>
+  <g text-anchor="middle" font-size="20" fill="#1A1A1A">
+    <text x="1230" y="380">End-to-End</text><text x="1230" y="404">Performance Observation</text>
+    <text x="1230" y="460">Capacity</text><text x="1230" y="484">Prediction</text>
+    <text x="1230" y="540">Metadata</text><text x="1230" y="564">Monitoring</text>
+  </g>
+  <text x="1230" y="666" text-anchor="middle" font-size="22" font-weight="700" fill="#1A1A1A">O&amp;M Management</text>
+</svg>

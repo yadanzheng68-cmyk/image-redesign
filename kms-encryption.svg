@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1520" height="760" viewBox="0 0 1520 760" font-family="'Helvetica Neue','Arial',sans-serif">
+  <defs>
+    <marker id="aB" markerWidth="12" markerHeight="12" refX="8" refY="5" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M0,0 L10,5 L0,10 Z" fill="#3A6BF0"/>
+    </marker>
+    <linearGradient id="ossG" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FF8A33"/><stop offset="1" stop-color="#F0600A"/>
+    </linearGradient>
+    <!-- key note (sheet) -->
+    <symbol id="note" viewBox="0 0 130 78">
+      <path d="M5,5 H125 V60 L110,73 H5 Z" fill="#FFFFFF" stroke="#0A3CD9" stroke-width="3" stroke-linejoin="round"/>
+      <path d="M125,60 H110 V73" fill="none" stroke="#0A3CD9" stroke-width="3" stroke-linejoin="round"/>
+    </symbol>
+    <!-- 3D data cube -->
+    <symbol id="cube" viewBox="0 0 84 84">
+      <polygon points="8,30 30,12 78,12 56,30" fill="#EAF1FF" stroke="#0A3CD9" stroke-width="2.5" stroke-linejoin="round"/>
+      <polygon points="56,30 78,12 78,58 56,76" fill="#DBE7FB" stroke="#0A3CD9" stroke-width="2.5" stroke-linejoin="round"/>
+      <polygon points="8,30 56,30 56,76 8,76" fill="#FFFFFF" stroke="#0A3CD9" stroke-width="2.5" stroke-linejoin="round"/>
+    </symbol>
+    <!-- orange OSS storage stack -->
+    <symbol id="oss" viewBox="0 0 84 104">
+      <path d="M4,18 V40 A38,12 0 0 0 80,40 V18 Z" fill="url(#ossG)"/>
+      <path d="M4,44 V64 A38,12 0 0 0 80,64 V44 Z" fill="url(#ossG)"/>
+      <path d="M4,70 V90 A38,12 0 0 0 80,90 V70 Z" fill="url(#ossG)"/>
+      <ellipse cx="42" cy="18" rx="38" ry="12" fill="#FFAE6B"/>
+      <ellipse cx="42" cy="44" rx="38" ry="12" fill="#FFAE6B"/>
+      <ellipse cx="42" cy="70" rx="38" ry="12" fill="#FFAE6B"/>
+    </symbol>
+  </defs>
+
+  <rect x="0" y="0" width="1520" height="760" fill="#FFFFFF"/>
+
+  <!-- brand -->
+  <text x="1100" y="36" font-size="16" font-weight="800" fill="#0A3CD9" letter-spacing="0.5">ALIBABA CLOUD INTELLIGENCE</text>
+  <text x="1410" y="36" font-size="16" font-weight="800" fill="#8A8F99" letter-spacing="0.5">GROUP</text>
+
+  <!-- outer dashed border -->
+  <rect x="20" y="56" width="1040" height="676" rx="10" fill="none" stroke="#9AA3B2" stroke-width="2" stroke-dasharray="9 7"/>
+
+  <!-- ===== Customer Master Key stack ===== -->
+  <use href="#note" x="392" y="84"  width="200" height="120"/>
+  <use href="#note" x="380" y="96"  width="200" height="120"/>
+  <use href="#note" x="368" y="108" width="200" height="120"/>
+  <text x="468" y="158" text-anchor="middle" font-size="22" fill="#1A1A1A">Customer</text>
+  <text x="468" y="184" text-anchor="middle" font-size="22" fill="#1A1A1A">Master Key</text>
+
+  <!-- KMS generate + upload icons -->
+  <g transform="translate(720,96)">
+    <circle cx="14" cy="14" r="14" fill="none" stroke="#FF6A00" stroke-width="3"/>
+    <circle cx="14" cy="14" r="6" fill="#FF6A00"/>
+    <path d="M7,26 L4,40 L14,34 L24,40 L21,26 Z" fill="#FF6A00"/>
+  </g>
+  <text x="770" y="104" font-size="20" fill="#1A1A1A">Use KMS to generate</text>
+  <text x="770" y="128" font-size="20" fill="#1A1A1A">keys</text>
+  <path d="M716,116 H600" fill="none" stroke="#3A6BF0" stroke-width="2.5" marker-end="url(#aB)"/>
+
+  <g transform="translate(724,156)">
+    <circle cx="10" cy="20" r="9" fill="none" stroke="#3A6BF0" stroke-width="3"/>
+    <rect x="17" y="17" width="26" height="6" fill="#3A6BF0"/>
+    <rect x="37" y="17" width="6" height="12" fill="#3A6BF0"/>
+  </g>
+  <text x="780" y="182" font-size="20" fill="#1A1A1A">Upload key material</text>
+  <path d="M720,176 H640 V150 H588" fill="none" stroke="#3A6BF0" stroke-width="2.5" marker-end="url(#aB)"/>
+
+  <!-- ===== Data keys ===== -->
+  <use href="#note" x="330" y="250" width="120" height="72"/>
+  <use href="#note" x="476" y="250" width="120" height="72"/>
+  <use href="#note" x="622" y="250" width="120" height="72"/>
+  <use href="#note" x="768" y="250" width="120" height="72"/>
+  <g text-anchor="middle" font-size="18" fill="#1A1A1A">
+    <text x="390" y="282">Data</text><text x="390" y="304">key 1</text>
+    <text x="536" y="282">Data</text><text x="536" y="304">key 2</text>
+    <text x="682" y="282">Data</text><text x="682" y="304">key 3</text>
+    <text x="828" y="282">Data</text><text x="828" y="304">key 4</text>
+  </g>
+  <!-- CMK -> data keys -->
+  <g fill="none" stroke="#3A6BF0" stroke-width="2.5">
+    <path d="M455,232 Q420,242 392,250" marker-end="url(#aB)"/>
+    <path d="M468,232 Q500,242 528,250" marker-end="url(#aB)"/>
+    <path d="M480,230 Q600,238 672,250" marker-end="url(#aB)"/>
+    <path d="M495,228 Q700,236 812,250" marker-end="url(#aB)"/>
+  </g>
+
+  <!-- ===== Data cubes ===== -->
+  <rect x="330" y="350" width="560" height="120" rx="4" fill="none" stroke="#9AA3B2" stroke-width="1.5" stroke-dasharray="6 5"/>
+  <use href="#cube" x="350" y="372" width="84" height="84"/>
+  <use href="#cube" x="496" y="372" width="84" height="84"/>
+  <use href="#cube" x="642" y="372" width="84" height="84"/>
+  <use href="#cube" x="788" y="372" width="84" height="84"/>
+  <g text-anchor="middle" font-size="18" fill="#1A1A1A">
+    <text x="388" y="420">Data 1</text>
+    <text x="534" y="420">Data 2</text>
+    <text x="680" y="420">Data 3</text>
+    <text x="826" y="420">Data 4</text>
+  </g>
+  <!-- data key -> cube -->
+  <g fill="none" stroke="#3A6BF0" stroke-width="2.5">
+    <line x1="390" y1="322" x2="390" y2="370" marker-end="url(#aB)"/>
+    <line x1="536" y1="322" x2="536" y2="370" marker-end="url(#aB)"/>
+    <line x1="682" y1="322" x2="682" y2="370" marker-end="url(#aB)"/>
+    <line x1="828" y1="322" x2="828" y2="370" marker-end="url(#aB)"/>
+  </g>
+
+  <!-- server (left) -->
+  <g transform="translate(90,360)">
+    <rect x="0" y="0" width="58" height="92" rx="6" fill="#2E5BEA"/>
+    <rect x="10" y="12" width="38" height="7" rx="3" fill="#FFFFFF" fill-opacity="0.9"/>
+    <rect x="10" y="26" width="38" height="7" rx="3" fill="#FFFFFF" fill-opacity="0.6"/>
+    <circle cx="16" cy="74" r="6" fill="#FFFFFF"/>
+    <rect x="66" y="44" width="48" height="14" rx="3" fill="#0A3CD9"/><circle cx="106" cy="51" r="3" fill="#fff"/>
+    <rect x="66" y="62" width="48" height="14" rx="3" fill="#0A3CD9"/><circle cx="106" cy="69" r="3" fill="#fff"/>
+  </g>
+  <line x1="214" y1="408" x2="326" y2="408" stroke="#3A6BF0" stroke-width="2.5" stroke-dasharray="8 6" marker-end="url(#aB)"/>
+
+  <!-- big down arrow -->
+  <polygon points="560,478 660,478 660,500 690,500 610,540 530,500 560,500" fill="none" stroke="#3A6BF0" stroke-width="2.5" stroke-linejoin="round"/>
+
+  <!-- ===== OSS storage devices ===== -->
+  <use href="#oss" x="350" y="556" width="84" height="104"/>
+  <use href="#oss" x="470" y="556" width="84" height="104"/>
+  <use href="#oss" x="590" y="556" width="84" height="104"/>
+  <use href="#oss" x="710" y="556" width="84" height="104"/>
+  <use href="#oss" x="830" y="556" width="84" height="104"/>
+  <text x="900" y="700" text-anchor="end" font-size="20" fill="#1A1A1A">OSS storage devices</text>
+
+  <!-- ===== bullets ===== -->
+  <g font-size="22" fill="#1A1A1A">
+    <circle cx="1100" cy="222" r="3.5" fill="#1A1A1A"/>
+    <text x="1120" y="228">Multi-level key envelope</text><text x="1120" y="258">encryption</text>
+    <circle cx="1100" cy="320" r="3.5" fill="#1A1A1A"/>
+    <text x="1120" y="326">Support for encryption and</text><text x="1120" y="356">decryption by using BYOK</text>
+    <circle cx="1100" cy="418" r="3.5" fill="#1A1A1A"/>
+    <text x="1120" y="424">Keys managed by KMS</text>
+    <circle cx="1100" cy="496" r="3.5" fill="#1A1A1A"/>
+    <text x="1120" y="502">A random key generated for</text><text x="1120" y="532">each object</text>
+  </g>
+</svg>
