@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1040" viewBox="0 0 1920 1040" font-family="'Helvetica Neue','Arial',sans-serif">
+  <defs>
+    <linearGradient id="nc3d" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#AEB6C2"/><stop offset="1" stop-color="#7C8597"/></linearGradient>
+    <linearGradient id="blueSW" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2E5BEA"/><stop offset="1" stop-color="#0A3CD9"/></linearGradient>
+    <marker id="up" markerWidth="10" markerHeight="10" refX="5" refY="1" orient="auto"><path d="M0,8 L5,0 L10,8 Z" fill="#0A3CD9"/></marker>
+    <marker id="dn" markerWidth="10" markerHeight="10" refX="5" refY="9" orient="auto"><path d="M0,2 L5,10 L10,2 Z" fill="#0A3CD9"/></marker>
+  </defs>
+  <rect x="0" y="0" width="1920" height="1040" fill="#FFFFFF"/>
+
+  <!-- =================== TOP ACCESS ZONES =================== -->
+  <!-- Internet -->
+  <rect x="470" y="26" width="300" height="150" rx="4" fill="none" stroke="#2E5BEA" stroke-width="1.6" stroke-dasharray="6 5"/>
+  <text x="492" y="56" font-size="22" font-weight="700" fill="#2E5BEA">Internet</text>
+  <rect x="540" y="78" width="190" height="30" rx="3" fill="#2B2F36"/><text x="635" y="98" text-anchor="middle" font-size="14" fill="#FFFFFF">Splitter</text>
+  <rect x="525" y="120" width="95" height="28" rx="3" fill="#2B2F36"/><text x="572" y="139" text-anchor="middle" font-size="13" fill="#FFFFFF">ISW1</text>
+  <rect x="635" y="120" width="95" height="28" rx="3" fill="#2B2F36"/><text x="682" y="139" text-anchor="middle" font-size="13" fill="#FFFFFF">ISW2</text>
+
+  <!-- Integrated Access Zone -->
+  <rect x="838" y="26" width="280" height="150" rx="4" fill="none" stroke="#2E5BEA" stroke-width="1.6" stroke-dasharray="6 5"/>
+  <text x="1100" y="92" font-size="15" font-weight="700" fill="#2E5BEA">Integrated</text>
+  <text x="1100" y="112" font-size="15" font-weight="700" fill="#2E5BEA">Access Zone</text>
+  <rect x="888" y="48" width="100" height="32" rx="3" fill="#2B2F36"/><text x="938" y="69" text-anchor="middle" font-size="14" fill="#FFFFFF">LSW1</text>
+  <rect x="1000" y="48" width="100" height="32" rx="3" fill="#2B2F36"/><text x="1050" y="69" text-anchor="middle" font-size="14" fill="#FFFFFF">LSW2</text>
+
+  <!-- Intranet Access Zone -->
+  <rect x="1250" y="26" width="350" height="150" rx="4" fill="none" stroke="#2E5BEA" stroke-width="1.6" stroke-dasharray="6 5"/>
+  <text x="1576" y="80" font-size="15" font-weight="700" fill="#2E5BEA">Intranet</text>
+  <text x="1576" y="100" font-size="15" font-weight="700" fill="#2E5BEA">Access Zone</text>
+  <rect x="1300" y="50" width="100" height="30" rx="3" fill="#2B2F36"/><text x="1350" y="70" text-anchor="middle" font-size="13" fill="#FFFFFF">FW1</text>
+  <rect x="1420" y="50" width="100" height="30" rx="3" fill="#2B2F36"/><text x="1470" y="70" text-anchor="middle" font-size="13" fill="#FFFFFF">FW2</text>
+  <rect x="1300" y="120" width="100" height="30" rx="3" fill="#2B2F36"/><text x="1350" y="140" text-anchor="middle" font-size="13" fill="#FFFFFF">CSW1</text>
+  <rect x="1420" y="120" width="100" height="30" rx="3" fill="#2B2F36"/><text x="1470" y="140" text-anchor="middle" font-size="13" fill="#FFFFFF">CSW2</text>
+  <line x1="1350" y1="80" x2="1350" y2="120" stroke="#2B2F36" stroke-width="1.2"/>
+  <line x1="1470" y1="80" x2="1470" y2="120" stroke="#2B2F36" stroke-width="1.2"/>
+  <line x1="1350" y1="100" x2="1470" y2="100" stroke="#2B2F36" stroke-width="1.2"/>
+
+  <!-- =================== DATA EXCHANGE ZONE =================== -->
+  <rect x="200" y="195" width="1620" height="215" rx="4" fill="none" stroke="#2E5BEA" stroke-width="1.8" stroke-dasharray="7 6"/>
+  <text x="222" y="240" font-size="24" font-weight="700" fill="#2E5BEA">Data Exchange Zone</text>
+  <g fill="#2B2F36">
+    <rect x="735" y="222" width="100" height="36" rx="3"/><rect x="845" y="222" width="100" height="36" rx="3"/>
+    <rect x="955" y="222" width="100" height="36" rx="3"/><rect x="1065" y="222" width="100" height="36" rx="3"/>
+  </g>
+  <g fill="#FFFFFF" font-size="14" text-anchor="middle">
+    <text x="785" y="245">DSW1</text><text x="895" y="245">DSW2</text><text x="1005" y="245">DSW3</text><text x="1115" y="245">DSW4</text>
+  </g>
+  <!-- HSW group -->
+  <rect x="230" y="318" width="430" height="58" rx="4" fill="none" stroke="#9AA3B2" stroke-width="1.4" stroke-dasharray="6 5"/>
+  <rect x="248" y="330" width="95" height="34" rx="3" fill="#2B2F36"/><text x="295" y="352" text-anchor="middle" font-size="13" fill="#FFFFFF">HSW1</text>
+  <rect x="353" y="330" width="95" height="34" rx="3" fill="#2B2F36"/><text x="400" y="352" text-anchor="middle" font-size="13" fill="#FFFFFF">HSW2</text>
+  <text x="490" y="352" text-anchor="middle" font-size="13" fill="#5A6270">x80 ...</text>
+  <rect x="540" y="330" width="100" height="34" rx="3" fill="#2B2F36"/><text x="590" y="352" text-anchor="middle" font-size="13" fill="#FFFFFF">HSW80</text>
+  <!-- ASW group -->
+  <rect x="1150" y="318" width="440" height="58" rx="4" fill="none" stroke="#9AA3B2" stroke-width="1.4" stroke-dasharray="6 5"/>
+  <rect x="1168" y="330" width="95" height="34" rx="3" fill="#2B2F36"/><text x="1215" y="352" text-anchor="middle" font-size="13" fill="#FFFFFF">ASW1</text>
+  <rect x="1273" y="330" width="95" height="34" rx="3" fill="#2B2F36"/><text x="1320" y="352" text-anchor="middle" font-size="13" fill="#FFFFFF">ASW2</text>
+  <text x="1410" y="352" text-anchor="middle" font-size="13" fill="#5A6270">x20 ...</text>
+  <rect x="1462" y="330" width="105" height="34" rx="3" fill="#2B2F36"/><text x="1514" y="352" text-anchor="middle" font-size="13" fill="#FFFFFF">ASW20</text>
+  <rect x="1720" y="330" width="95" height="34" rx="3" fill="#2B2F36"/><text x="1767" y="352" text-anchor="middle" font-size="13" fill="#FFFFFF">ASW n</text>
+  <text x="555" y="290" font-size="13" fill="#5A6270">100G*4</text>
+  <text x="1420" y="318" font-size="13" fill="#5A6270">100G*4</text>
+  <text x="1690" y="300" font-size="13" fill="#5A6270">25G*4</text>
+
+  <!-- top-zone -> DSW fan-out (representative) -->
+  <g stroke="#5A6270" stroke-width="1" fill="none" opacity="0.8">
+    <path d="M572,148 L760,222"/><path d="M682,148 L800,222"/>
+    <path d="M938,80 L820,222"/><path d="M938,80 L900,222"/><path d="M1050,80 L1010,222"/><path d="M1050,80 L1110,222"/>
+    <path d="M1350,150 L1130,222"/><path d="M1470,150 L1140,222"/>
+  </g>
+  <!-- DSW -> HSW/ASW fan-out (representative) -->
+  <g stroke="#5A6270" stroke-width="1" fill="none" opacity="0.8">
+    <path d="M760,258 L300,330"/><path d="M820,258 L400,330"/><path d="M900,258 L590,330"/>
+    <path d="M1010,258 L1215,330"/><path d="M1110,258 L1320,330"/><path d="M1115,258 L1514,330"/><path d="M1140,258 L1767,330"/>
+  </g>
+
+  <!-- =================== CPN GPU NETWORK =================== -->
+  <rect x="40" y="415" width="965" height="600" rx="6" fill="none" stroke="#2E5BEA" stroke-width="1.8" stroke-dasharray="8 6"/>
+  <text x="80" y="455" font-size="24" font-weight="700" fill="#2E5BEA">CPN GPU Network</text>
+
+  <!-- left scale labels -->
+  <g font-size="13" fill="#1A1A1A" text-anchor="middle">
+    <text x="95" y="492">4 ▲ RMSW</text><text x="95" y="512">32 ▼</text>
+    <text x="95" y="588" fill="#0A3CD9">10G</text>
+    <text x="95" y="628">2 ▲ RDSW 8</text><text x="95" y="648">120 ▼</text>
+    <text x="95" y="700" fill="#0A3CD9">400G</text>
+    <text x="95" y="752">64 ▲ RASW</text><text x="95" y="772">64 ▼</text>
+    <text x="95" y="858" fill="#0A3CD9">200G</text>
+    <text x="95" y="900">NC</text>
+  </g>
+
+  <!-- RMSW row -->
+  <g>
+    <rect x="160" y="480" width="92" height="36" rx="3" fill="#C9CED6"/><rect x="262" y="480" width="92" height="36" rx="3" fill="#C9CED6"/>
+    <rect x="364" y="480" width="92" height="36" rx="3" fill="#C9CED6"/><rect x="466" y="480" width="92" height="36" rx="3" fill="#C9CED6"/>
+    <rect x="568" y="480" width="92" height="36" rx="3" fill="#C9CED6"/><rect x="670" y="480" width="92" height="36" rx="3" fill="#C9CED6"/>
+    <rect x="772" y="480" width="92" height="36" rx="3" fill="#C9CED6"/><rect x="874" y="480" width="92" height="36" rx="3" fill="#C9CED6"/>
+  </g>
+  <g font-size="12" text-anchor="middle" fill="#1A1A1A">
+    <text x="206" y="503">RMSW1</text><text x="308" y="503">RMSW2</text><text x="410" y="503">RMSW3</text><text x="512" y="503">RMSW4</text>
+    <text x="614" y="503">RMSW5</text><text x="716" y="503">RMSW6</text><text x="818" y="503">RMSW7</text><text x="920" y="503">RMSW8</text>
+  </g>
+  <text x="340" y="560" font-size="12" fill="#5A6270">10G</text>
+  <text x="700" y="560" font-size="12" fill="#5A6270">10G</text>
+  <text x="470" y="556" font-size="12" font-weight="700" fill="#1A1A1A">Breakout Cable 400G*8</text>
+
+  <!-- RDSW Plane1 / Plane2 -->
+  <rect x="270" y="598" width="240" height="48" rx="4" fill="none" stroke="#9AA3B2" stroke-width="1.4" stroke-dasharray="6 5"/>
+  <text x="250" y="592" font-size="12" fill="#5A6270">Plane1</text>
+  <rect x="285" y="606" width="100" height="32" rx="3" fill="url(#blueSW)"/><text x="335" y="627" text-anchor="middle" font-size="12" fill="#FFFFFF">RDSW1</text>
+  <text x="405" y="627" font-size="12" fill="#1A1A1A">···</text>
+  <rect x="420" y="606" width="100" height="32" rx="3" fill="url(#blueSW)"/><text x="470" y="627" text-anchor="middle" font-size="11" fill="#FFFFFF">RDSW64</text>
+  <rect x="560" y="598" width="240" height="48" rx="4" fill="none" stroke="#9AA3B2" stroke-width="1.4" stroke-dasharray="6 5"/>
+  <text x="760" y="592" font-size="12" fill="#5A6270">Plane2</text>
+  <rect x="575" y="606" width="100" height="32" rx="3" fill="url(#blueSW)"/><text x="625" y="627" text-anchor="middle" font-size="11" fill="#FFFFFF">RDSW65</text>
+  <text x="690" y="627" font-size="12" fill="#1A1A1A">···</text>
+  <rect x="700" y="606" width="100" height="32" rx="3" fill="url(#blueSW)"/><text x="750" y="627" text-anchor="middle" font-size="10" fill="#FFFFFF">RDSW128</text>
+  <g font-size="11" fill="#5A6270"><text x="300" y="672">400G</text><text x="400" y="672">400G</text><text x="500" y="672">400G</text><text x="600" y="672">400G</text></g>
+
+  <!-- RASW Seg1 -->
+  <rect x="180" y="690" width="640" height="200" rx="6" fill="none" stroke="#9AA3B2" stroke-width="1.4" stroke-dasharray="7 6"/>
+  <text x="210" y="715" font-size="16" font-weight="700" fill="#2E5BEA">RASW Seg 1</text>
+  <g>
+    <rect x="210" y="735" width="32" height="34" fill="#37B26B"/>
+    <rect x="244" y="735" width="32" height="34" fill="#7BD89B"/>
+    <rect x="278" y="735" width="32" height="34" fill="#F08A24"/><rect x="312" y="735" width="32" height="34" fill="#F7B36B"/>
+    <rect x="346" y="735" width="32" height="34" fill="#F7D774"/><rect x="380" y="735" width="32" height="34" fill="#FAE6A8"/>
+    <rect x="414" y="735" width="32" height="34" fill="#2B2F36"/><rect x="448" y="735" width="32" height="34" fill="#9AA3B2"/>
+    <rect x="482" y="735" width="32" height="34" fill="#E23B2E"/><rect x="516" y="735" width="32" height="34" fill="#F0857F"/>
+    <rect x="550" y="735" width="32" height="34" fill="#7E57C2"/><rect x="584" y="735" width="32" height="34" fill="#B39DDB"/>
+    <rect x="618" y="735" width="32" height="34" fill="#2E78D6"/><rect x="652" y="735" width="32" height="34" fill="#7FB3EC"/>
+    <rect x="686" y="735" width="32" height="34" fill="#9AA3B2"/><rect x="720" y="735" width="32" height="34" fill="#C9CED6"/>
+  </g>
+  <g font-size="12" fill="#FFFFFF" text-anchor="middle" font-weight="700">
+    <text x="226" y="757">1</text><text x="260" y="757">2</text><text x="294" y="757">3</text><text x="328" y="757">4</text>
+    <text x="362" y="757">5</text><text x="396" y="757">6</text><text x="430" y="757">7</text><text x="464" y="757" fill="#1A1A1A">8</text>
+    <text x="498" y="757">9</text><text x="532" y="757">10</text><text x="566" y="757">11</text><text x="600" y="757">12</text>
+    <text x="634" y="757">13</text><text x="668" y="757">14</text><text x="702" y="757">15</text><text x="736" y="757" fill="#1A1A1A">16</text>
+  </g>
+  <text x="200" y="800" font-size="12" fill="#5A6270">Split 1→2</text>
+  <text x="200" y="816" font-size="12" fill="#5A6270">200G</text>
+  <text x="880" y="715" font-size="16" font-weight="700" fill="#2E5BEA">Seg 15</text>
+  <text x="850" y="800" font-size="14" fill="#5A6270">···</text>
+
+  <!-- NC nodes -->
+  <g>
+    <!-- NC1 -->
+    <g><rect x="215" y="852" width="130" height="52" rx="2" fill="url(#nc3d)"/><polygon points="215,852 230,838 360,838 345,852" fill="#C2C8D2"/><polygon points="345,852 360,838 360,890 345,904" fill="#6E7686"/></g>
+    <text x="280" y="884" text-anchor="middle" font-size="13" fill="#1A1A1A">NC1</text>
+    <g>
+      <rect x="218" y="828" width="13" height="16" fill="#EEE"/><rect x="231" y="828" width="13" height="16" fill="#E23B2E"/><rect x="244" y="828" width="13" height="16" fill="#F08A24"/><rect x="257" y="828" width="13" height="16" fill="#F7D774"/><rect x="270" y="828" width="13" height="16" fill="#37B26B"/><rect x="283" y="828" width="13" height="16" fill="#3DB6C9"/><rect x="296" y="828" width="13" height="16" fill="#2E78D6"/><rect x="309" y="828" width="13" height="16" fill="#7E57C2"/><rect x="322" y="828" width="13" height="16" fill="#E879B8"/><rect x="335" y="828" width="13" height="16" fill="#9AA3B2"/>
+    </g>
+    <!-- NC2 -->
+    <g><rect x="405" y="852" width="130" height="52" rx="2" fill="url(#nc3d)"/><polygon points="405,852 420,838 550,838 535,852" fill="#C2C8D2"/><polygon points="535,852 550,838 550,890 535,904" fill="#6E7686"/></g>
+    <text x="470" y="884" text-anchor="middle" font-size="13" fill="#1A1A1A">NC2</text>
+    <g>
+      <rect x="408" y="828" width="13" height="16" fill="#EEE"/><rect x="421" y="828" width="13" height="16" fill="#E23B2E"/><rect x="434" y="828" width="13" height="16" fill="#F08A24"/><rect x="447" y="828" width="13" height="16" fill="#F7D774"/><rect x="460" y="828" width="13" height="16" fill="#37B26B"/><rect x="473" y="828" width="13" height="16" fill="#3DB6C9"/><rect x="486" y="828" width="13" height="16" fill="#2E78D6"/><rect x="499" y="828" width="13" height="16" fill="#7E57C2"/><rect x="512" y="828" width="13" height="16" fill="#E879B8"/><rect x="525" y="828" width="13" height="16" fill="#9AA3B2"/>
+    </g>
+    <text x="600" y="884" font-size="13" fill="#5A6270">x128 ···</text>
+    <!-- NC128 -->
+    <g><rect x="650" y="852" width="140" height="52" rx="2" fill="url(#nc3d)"/><polygon points="650,852 665,838 805,838 790,852" fill="#C2C8D2"/><polygon points="790,852 805,838 805,890 790,904" fill="#6E7686"/></g>
+    <text x="720" y="884" text-anchor="middle" font-size="13" fill="#1A1A1A">NC128</text>
+    <!-- NC1920 -->
+    <g><rect x="880" y="855" width="90" height="44" rx="2" fill="url(#nc3d)"/></g>
+    <text x="925" y="882" text-anchor="middle" font-size="12" fill="#1A1A1A">NC1920</text>
+  </g>
+  <!-- RASW -> NC colored splay (representative) -->
+  <g stroke-width="1.2" fill="none" opacity="0.75">
+    <path d="M226,769 L240,828" stroke="#37B26B"/><path d="M294,769 L260,828" stroke="#F08A24"/>
+    <path d="M362,769 L280,828" stroke="#F7D774"/><path d="M498,769 L300,828" stroke="#E23B2E"/>
+    <path d="M566,769 L430,828" stroke="#7E57C2"/><path d="M634,769 L470,828" stroke="#2E78D6"/>
+    <path d="M226,769 L430,828" stroke="#37B26B"/><path d="M702,769 L520,828" stroke="#9AA3B2"/>
+  </g>
+
+  <!-- =================== CPN STORAGE NETWORK =================== -->
+  <rect x="1015" y="415" width="615" height="600" rx="6" fill="none" stroke="#2E5BEA" stroke-width="1.8" stroke-dasharray="8 6"/>
+  <text x="1300" y="455" font-size="24" font-weight="700" fill="#2E5BEA">CPN Storage Network</text>
+  <text x="1150" y="470" font-size="12" fill="#5A6270">100G</text>
+
+  <!-- EDSW Plane1/Plane2 -->
+  <text x="1140" y="585" font-size="12" font-weight="700" fill="#1A1A1A">Breakout Cable 400G*4</text>
+  <rect x="1040" y="598" width="230" height="48" rx="4" fill="none" stroke="#9AA3B2" stroke-width="1.4" stroke-dasharray="6 5"/>
+  <text x="1055" y="664" font-size="12" fill="#5A6270">Plane1</text>
+  <rect x="1055" y="606" width="95" height="32" rx="3" fill="url(#blueSW)"/><text x="1102" y="627" text-anchor="middle" font-size="12" fill="#FFFFFF">EDSW1</text>
+  <text x="1165" y="627" font-size="12">···</text>
+  <rect x="1175" y="606" width="95" height="32" rx="3" fill="url(#blueSW)"/><text x="1222" y="627" text-anchor="middle" font-size="12" fill="#FFFFFF">EDSW8</text>
+  <rect x="1300" y="598" width="240" height="48" rx="4" fill="none" stroke="#9AA3B2" stroke-width="1.4" stroke-dasharray="6 5"/>
+  <text x="1500" y="664" font-size="12" fill="#5A6270">Plane2</text>
+  <rect x="1310" y="606" width="95" height="32" rx="3" fill="url(#blueSW)"/><text x="1357" y="627" text-anchor="middle" font-size="12" fill="#FFFFFF">EDSW9</text>
+  <text x="1420" y="627" font-size="12">···</text>
+  <rect x="1430" y="606" width="100" height="32" rx="3" fill="url(#blueSW)"/><text x="1480" y="627" text-anchor="middle" font-size="11" fill="#FFFFFF">EDSW16</text>
+
+  <!-- EHSW groups -->
+  <rect x="1040" y="720" width="220" height="60" rx="4" fill="none" stroke="#9AA3B2" stroke-width="1.4" stroke-dasharray="6 5"/>
+  <text x="1150" y="712" font-size="14" font-weight="700" fill="#2E5BEA">EHSW Group1~96</text>
+  <g fill="#FFFFFF" stroke="#9AA3B2"><rect x="1052" y="735" width="30" height="30"/><rect x="1082" y="735" width="30" height="30"/></g>
+  <text x="1067" y="755" text-anchor="middle" font-size="12">1</text><text x="1097" y="755" text-anchor="middle" font-size="12">2</text>
+  <text x="1140" y="755" font-size="12">···</text>
+  <g fill="#FFFFFF" stroke="#9AA3B2"><rect x="1170" y="735" width="38" height="30"/><rect x="1208" y="735" width="38" height="30"/></g>
+  <text x="1189" y="755" text-anchor="middle" font-size="11">191</text><text x="1227" y="755" text-anchor="middle" font-size="11">192</text>
+
+  <rect x="1300" y="720" width="240" height="60" rx="4" fill="none" stroke="#9AA3B2" stroke-width="1.4" stroke-dasharray="6 5"/>
+  <text x="1420" y="712" font-size="14" font-weight="700" fill="#2E5BEA">EHSW Group97~120</text>
+  <rect x="1312" y="735" width="30" height="30" fill="#37B26B"/><rect x="1342" y="735" width="30" height="30" fill="#F08A24"/>
+  <text x="1327" y="755" text-anchor="middle" font-size="12" fill="#FFF">1</text><text x="1357" y="755" text-anchor="middle" font-size="12" fill="#FFF">2</text>
+  <text x="1400" y="755" font-size="12">···</text>
+  <rect x="1440" y="735" width="36" height="30" fill="#37B26B"/><rect x="1476" y="735" width="36" height="30" fill="#F08A24"/>
+  <text x="1458" y="755" text-anchor="middle" font-size="11" fill="#FFF">47</text><text x="1494" y="755" text-anchor="middle" font-size="11" fill="#FFF">48</text>
+  <g font-size="12" fill="#5A6270"><text x="1170" y="700">200G</text><text x="1450" y="700">200G</text></g>
+
+  <!-- CPFS nodes -->
+  <g>
+    <g><rect x="1070" y="852" width="120" height="50" rx="2" fill="url(#nc3d)"/><polygon points="1070,852 1083,840 1203,840 1190,852" fill="#C2C8D2"/><polygon points="1190,852 1203,840 1203,890 1190,902" fill="#6E7686"/></g>
+    <text x="1130" y="883" text-anchor="middle" font-size="12" fill="#1A1A1A">CPFS1</text>
+    <g><rect x="1073" y="830" width="14" height="16" fill="#EEE"/><rect x="1087" y="830" width="14" height="16" fill="#37B26B"/><rect x="1101" y="830" width="14" height="16" fill="#F08A24"/></g>
+    <g font-size="11" text-anchor="middle"><text x="1080" y="842">0</text><text x="1094" y="842" fill="#fff">1</text><text x="1108" y="842" fill="#fff">2</text></g>
+    <text x="1240" y="883" font-size="12" fill="#5A6270">x20 ···</text>
+    <g><rect x="1290" y="852" width="120" height="50" rx="2" fill="url(#nc3d)"/><polygon points="1290,852 1303,840 1423,840 1410,852" fill="#C2C8D2"/><polygon points="1410,852 1423,840 1423,890 1410,902" fill="#6E7686"/></g>
+    <text x="1350" y="883" text-anchor="middle" font-size="12" fill="#1A1A1A">CPFS20</text>
+    <g><rect x="1293" y="830" width="14" height="16" fill="#EEE"/><rect x="1307" y="830" width="14" height="16" fill="#37B26B"/><rect x="1321" y="830" width="14" height="16" fill="#F08A24"/></g>
+    <g><rect x="1450" y="855" width="120" height="46" rx="2" fill="url(#nc3d)"/></g>
+    <text x="1510" y="882" text-anchor="middle" font-size="12" fill="#1A1A1A">CPFS480</text>
+  </g>
+  <text x="1060" y="800" font-size="12" fill="#5A6270">Split 1→2 100G</text>
+  <!-- EHSW -> CPFS splay -->
+  <g stroke-width="1.2" fill="none" opacity="0.75">
+    <path d="M1327,765 L1090,830" stroke="#37B26B"/><path d="M1357,765 L1108,830" stroke="#F08A24"/>
+    <path d="M1327,765 L1310,830" stroke="#37B26B"/><path d="M1357,765 L1328,830" stroke="#F08A24"/>
+  </g>
+
+  <!-- =================== CLOUD PLATFORM NETWORK =================== -->
+  <rect x="1645" y="415" width="235" height="600" rx="6" fill="none" stroke="#2E5BEA" stroke-width="1.8" stroke-dasharray="8 6"/>
+  <text x="1762" y="450" text-anchor="middle" font-size="20" font-weight="700" fill="#2E5BEA">Cloud</text>
+  <text x="1762" y="474" text-anchor="middle" font-size="20" font-weight="700" fill="#2E5BEA">Platform</text>
+  <text x="1762" y="498" text-anchor="middle" font-size="20" font-weight="700" fill="#2E5BEA">Network</text>
+  <g font-size="13" fill="#1A1A1A" text-anchor="middle">
+    <text x="1700" y="620">4 ▲ EDSW 4</text><text x="1700" y="640">120 ▼</text>
+    <text x="1700" y="720" fill="#0A3CD9">200G</text>
+    <text x="1700" y="800">8 ▲ EHSW</text><text x="1700" y="820">20 ▼</text>
+    <text x="1700" y="900" fill="#0A3CD9">100G</text>
+    <text x="1700" y="945">CPFS</text>
+  </g>
+  <g><rect x="1800" y="860" width="60" height="40" rx="2" fill="url(#nc3d)"/><rect x="1800" y="930" width="60" height="40" rx="2" fill="url(#nc3d)"/></g>
+
+  <!-- spine -> network downlinks (representative) -->
+  <g stroke="#5A6270" stroke-width="1" fill="none" opacity="0.8">
+    <path d="M300,364 L300,480"/><path d="M590,364 L500,480"/>
+    <path d="M820,258 L520,606"/><path d="M900,258 L620,606"/>
+    <path d="M1010,258 L1102,606"/><path d="M1110,258 L1357,606"/>
+    <path d="M1215,364 L1762,560"/><path d="M1767,364 L1820,860"/>
+  </g>
+  <text x="640" y="475" font-size="13" fill="#5A6270">100G*4</text>
+  <text x="1860" y="600" font-size="12" fill="#5A6270">25G</text>
+
+  <!-- brand -->
+  <text x="40" y="1032" font-size="15" font-weight="800" fill="#0A3CD9" letter-spacing="0.5">ALIBABA CLOUD INTELLIGENCE</text>
+  <text x="340" y="1032" font-size="15" font-weight="800" fill="#8A8F99" letter-spacing="0.5">GROUP</text>
+</svg>
