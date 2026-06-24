@@ -1,23 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" width="1500" height="820" viewBox="0 0 1500 820" font-family="'Helvetica Neue','Arial',sans-serif">
   <defs>
-    <linearGradient id="barG" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#1FB8E8"/><stop offset="1" stop-color="#0AA2DC"/></linearGradient>
-    <linearGradient id="lbG" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#BFE0FF"/><stop offset="1" stop-color="#5AA9F5"/></linearGradient>
-    <linearGradient id="curveG" x1="0" y1="1" x2="0" y2="0"><stop offset="0" stop-color="#9CC2EE"/><stop offset="1" stop-color="#4A86D8"/></linearGradient>
+    <linearGradient id="barG" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#3A6BF0"/><stop offset="1" stop-color="#0A3CD9"/></linearGradient>
+    <linearGradient id="lbG" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#C7D6FF"/><stop offset="1" stop-color="#3A6BF0"/></linearGradient>
+    <linearGradient id="curveG" x1="0" y1="1" x2="0" y2="0"><stop offset="0" stop-color="#9CB4E8"/><stop offset="1" stop-color="#0A3CD9"/></linearGradient>
     <marker id="ar" markerWidth="11" markerHeight="11" refX="7" refY="5" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L9,5 L0,10 Z" fill="#5A6270"/></marker>
 
     <!-- one blue server bar -->
     <symbol id="bar" viewBox="0 0 90 22">
       <rect x="0" y="0" width="90" height="22" rx="3" fill="url(#barG)"/>
-      <circle cx="74" cy="11" r="4.5" fill="#FFFFFF"/>
+      <circle cx="74" cy="11" r="4.5" fill="#FF6A00"/>
     </symbol>
 
     <!-- RDS = Alibaba Cloud ApsaraDB hexagon mark (two overlapping hexes + 3-triangle motif) -->
     <symbol id="rds" viewBox="0 0 130 120">
       <!-- back hexagon (lighter), offset upper-right -->
-      <polygon points="80,16 110,33 110,67 80,84 50,67 50,33" fill="#5FD4F3"/>
+      <polygon points="80,16 110,33 110,67 80,84 50,67 50,33" fill="#6E97F2"/>
       <!-- front hexagon (main) -->
-      <polygon points="46,36 76,53 76,87 46,104 16,87 16,53" fill="#13B5E6"/>
+      <polygon points="46,36 76,53 76,87 46,104 16,87 16,53" fill="#0A3CD9"/>
       <!-- white three-triangle motif on front hexagon, centered ~(46,70) -->
       <polygon points="32,60 60,60 46,80" fill="#FFFFFF"/>
       <polygon points="30,84 44,84 37,70" fill="#FFFFFF"/>
@@ -26,24 +26,24 @@
 
     <!-- phone icon -->
     <symbol id="phone" viewBox="0 0 60 100">
-      <rect x="8" y="4" width="44" height="92" rx="8" fill="none" stroke="#13B5E6" stroke-width="4"/>
-      <rect x="16" y="16" width="28" height="62" rx="2" fill="#CFEFFA"/>
-      <circle cx="30" cy="87" r="4" fill="#13B5E6"/>
+      <rect x="8" y="4" width="44" height="92" rx="8" fill="none" stroke="#0A3CD9" stroke-width="4"/>
+      <rect x="16" y="16" width="28" height="62" rx="2" fill="#DCE6FF"/>
+      <circle cx="30" cy="87" r="4" fill="#0A3CD9"/>
     </symbol>
 
     <!-- monitor icon -->
     <symbol id="pc" viewBox="0 0 110 90">
-      <rect x="6" y="6" width="98" height="62" rx="6" fill="none" stroke="#13B5E6" stroke-width="4"/>
-      <rect x="16" y="16" width="78" height="42" rx="2" fill="#CFEFFA"/>
-      <rect x="44" y="68" width="22" height="10" fill="#13B5E6"/>
-      <rect x="30" y="78" width="50" height="7" rx="3" fill="#13B5E6"/>
+      <rect x="6" y="6" width="98" height="62" rx="6" fill="none" stroke="#0A3CD9" stroke-width="4"/>
+      <rect x="16" y="16" width="78" height="42" rx="2" fill="#DCE6FF"/>
+      <rect x="44" y="68" width="22" height="10" fill="#0A3CD9"/>
+      <rect x="30" y="78" width="50" height="7" rx="3" fill="#0A3CD9"/>
     </symbol>
 
     <!-- cloud monitor icon -->
     <symbol id="cmon" viewBox="0 0 90 70">
       <path d="M22,52 C8,52 4,34 20,32 C18,14 46,12 50,28 C66,22 78,40 64,52 Z" fill="none" stroke="#9AA3B2" stroke-width="3"/>
-      <circle cx="42" cy="58" r="9" fill="none" stroke="#13B5E6" stroke-width="3"/>
-      <circle cx="42" cy="58" r="3" fill="#13B5E6"/>
+      <circle cx="42" cy="58" r="9" fill="none" stroke="#0A3CD9" stroke-width="3"/>
+      <circle cx="42" cy="58" r="3" fill="#0A3CD9"/>
     </symbol>
   </defs>
 
