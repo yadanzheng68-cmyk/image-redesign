@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1110" viewBox="0 0 1600 1110" font-family="'Helvetica Neue','Arial',sans-serif">
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1190" viewBox="0 0 1600 1190" font-family="'Helvetica Neue','Arial',sans-serif">
   <defs>
     <marker id="aB" markerWidth="11" markerHeight="11" refX="7" refY="5" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L9,5 L0,10 Z" fill="#2E5BEA"/></marker>
     <marker id="aBs" markerWidth="11" markerHeight="11" refX="2" refY="5" orient="auto" markerUnits="userSpaceOnUse"><path d="M9,0 L0,5 L9,10 Z" fill="#2E5BEA"/></marker>
@@ -14,12 +14,12 @@
       <text x="32" y="50" text-anchor="middle" font-size="8" fill="#FFFFFF">Stack</text>
     </symbol>
   </defs>
-  <rect x="0" y="0" width="1600" height="1110" fill="#FFFFFF"/>
+  <rect x="0" y="0" width="1600" height="1190" fill="#FFFFFF"/>
   <text x="1180" y="34" font-size="16" font-weight="800" fill="#0A3CD9" letter-spacing="0.5">ALIBABA CLOUD INTELLIGENCE</text>
   <text x="1492" y="34" font-size="16" font-weight="800" fill="#8A8F99" letter-spacing="0.5">GROUP</text>
 
   <!-- ===================== CENTRAL DEPLOYMENT ===================== -->
-  <rect x="30" y="46" width="1010" height="1045" rx="20" fill="none" stroke="#0A3CD9" stroke-width="2.5"/>
+  <rect x="30" y="46" width="1010" height="1120" rx="20" fill="none" stroke="#0A3CD9" stroke-width="2.5"/>
   <text x="470" y="80" text-anchor="middle" font-size="24" font-weight="700" fill="#0A3CD9">Central Deployment</text>
   <rect x="60" y="96" width="850" height="800" rx="6" fill="none" stroke="#2E5BEA" stroke-width="1.6" stroke-dasharray="8 6"/>
 
@@ -56,11 +56,11 @@
   <text x="480" y="827" text-anchor="middle" font-size="15" font-weight="600" fill="#0A3CD9">AZ3 (DR)</text>
 
   <!-- Validation Cloud (gray, isolated) -->
-  <text x="455" y="908" text-anchor="middle" font-size="20" font-weight="700" fill="#3A3A3A">Validation Cloud (AZ-0)</text>
-  <text x="455" y="930" text-anchor="middle" font-size="13" font-style="italic" fill="#6B7280">Physically Isolated &#183; Zero-Trust Gate</text>
-  <use href="#cloud" x="200" y="942" width="510" height="150" fill="#ECEDEF" stroke="#B7BCC4" stroke-width="2"/>
-  <use href="#apsara" x="428" y="980" width="54" height="50"/>
-  <text x="455" y="1062" text-anchor="middle" font-size="15" font-weight="600" fill="#3A3A3A">AZ-0</text>
+  <use href="#cloud" x="180" y="900" width="560" height="250" fill="#ECEDEF" stroke="#B7BCC4" stroke-width="2"/>
+  <text x="460" y="1030" text-anchor="middle" font-size="18" font-weight="700" fill="#3A3A3A">Validation Cloud (AZ-0)</text>
+  <text x="460" y="1052" text-anchor="middle" font-size="12" font-style="italic" fill="#6B7280">Physically Isolated &#183; Zero-Trust Gate</text>
+  <use href="#apsara" x="433" y="1060" width="54" height="50"/>
+  <text x="460" y="1132" text-anchor="middle" font-size="14" font-weight="600" fill="#3A3A3A">AZ-0</text>
 
   <!-- ===================== EDGE NODES ===================== -->
   <rect x="1085" y="160" width="475" height="730" rx="6" fill="none" stroke="#0A3CD9" stroke-width="2"/>
