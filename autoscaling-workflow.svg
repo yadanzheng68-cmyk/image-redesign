@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="900" viewBox="0 0 1500 900" font-family="'Helvetica Neue','Arial',sans-serif">
+  <defs>
+    <linearGradient id="srvG" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#3A6BF0"/><stop offset="1" stop-color="#0A3CD9"/></linearGradient>
+    <linearGradient id="rdsG" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#3A6BF0"/><stop offset="1" stop-color="#0A3CD9"/></linearGradient>
+    <marker id="ar" markerWidth="12" markerHeight="12" refX="8" refY="5" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L10,5 L0,10 Z" fill="#2B2F36"/></marker>
+    <symbol id="srv" viewBox="0 0 40 64">
+      <rect x="2" y="2" width="36" height="60" rx="4" fill="url(#srvG)"/>
+      <rect x="8" y="9" width="24" height="5" rx="2" fill="#FFFFFF" fill-opacity="0.9"/>
+      <rect x="8" y="19" width="24" height="5" rx="2" fill="#FFFFFF" fill-opacity="0.6"/>
+      <rect x="8" y="29" width="24" height="5" rx="2" fill="#FFFFFF" fill-opacity="0.6"/>
+      <circle cx="12" cy="52" r="3" fill="#FF6A00"/>
+    </symbol>
+    <symbol id="rds" viewBox="0 0 90 90">
+      <path d="M6,20 V70 A39,16 0 0 0 84,70 V20 Z" fill="url(#rdsG)"/>
+      <ellipse cx="45" cy="20" rx="39" ry="16" fill="#4F84F5"/>
+      <path d="M6,42 A39,16 0 0 0 84,42" fill="none" stroke="#FFFFFF" stroke-opacity="0.35" stroke-width="2"/>
+      <path d="M6,58 A39,16 0 0 0 84,58" fill="none" stroke="#FFFFFF" stroke-opacity="0.35" stroke-width="2"/>
+    </symbol>
+  </defs>
+  <rect x="0" y="0" width="1500" height="900" fill="#FFFFFF"/>
+  <text x="1460" y="30" text-anchor="end" font-size="15" font-weight="800" fill="#0A3CD9" letter-spacing="0.5">ALIBABA CLOUD INTELLIGENCE</text>
+
+  <!-- ===== Scaling trigger task ===== -->
+  <rect x="70" y="55" width="560" height="165" rx="6" fill="none" stroke="#9AA3B2" stroke-width="1.5" stroke-dasharray="8 6"/>
+  <text x="200" y="86" font-size="18" font-weight="600" fill="#1A1A1A">Scaling trigger task</text>
+  <g fill="#FFFFFF" stroke="#0A3CD9" stroke-width="2">
+    <rect x="90" y="105" width="120" height="92" rx="4"/><rect x="220" y="105" width="120" height="92" rx="4"/>
+    <rect x="350" y="105" width="120" height="92" rx="4"/><rect x="480" y="105" width="120" height="92" rx="4"/>
+  </g>
+  <g text-anchor="middle" font-size="16" fill="#1A1A1A">
+    <text x="150" y="148">Schedule</text><text x="150" y="168">task</text>
+    <text x="280" y="156">Custom task</text>
+    <text x="410" y="148">Health</text><text x="410" y="168">check task</text>
+    <text x="540" y="142">Cloud</text><text x="540" y="160">Monitor</text><text x="540" y="178">task</text>
+  </g>
+
+  <!-- ===== Server Load Balancer ===== -->
+  <rect x="960" y="125" width="460" height="80" rx="4" fill="#FFFFFF" stroke="#0A3CD9" stroke-width="2.5"/>
+  <text x="1190" y="174" text-anchor="middle" font-size="26" font-weight="700" fill="#1A1A1A">Server Load Balancer</text>
+
+  <!-- ===== Scaling group ===== -->
+  <rect x="960" y="290" width="460" height="175" rx="6" fill="none" stroke="#2B2F36" stroke-width="1.6" stroke-dasharray="8 6"/>
+  <text x="1030" y="322" font-size="18" fill="#1A1A1A">Scaling group</text>
+  <use href="#srv" x="992"  y="335" width="40" height="64"/>
+  <use href="#srv" x="1072" y="335" width="40" height="64"/>
+  <use href="#srv" x="1152" y="335" width="40" height="64"/>
+  <use href="#srv" x="1232" y="335" width="40" height="64"/>
+  <use href="#srv" x="1312" y="335" width="40" height="64"/>
+  <g text-anchor="middle" font-size="16" fill="#1A1A1A">
+    <text x="1012" y="420">ECS</text><text x="1092" y="420">ECS</text><text x="1172" y="420">ECS</text><text x="1252" y="420">ECS</text><text x="1332" y="420">ECS</text>
+  </g>
+
+  <!-- ===== RDS row ===== -->
+  <use href="#rds" x="998"  y="520" width="86" height="86"/>
+  <use href="#rds" x="1148" y="520" width="86" height="86"/>
+  <use href="#rds" x="1298" y="520" width="86" height="86"/>
+  <g text-anchor="middle" font-size="16" fill="#1A1A1A"><text x="1041" y="575" fill="#FFFFFF">RDS</text><text x="1191" y="575" fill="#FFFFFF">RDS</text><text x="1341" y="575" fill="#FFFFFF">RDS</text></g>
+
+  <!-- SLB -> scaling group -->
+  <line x1="1190" y1="205" x2="1190" y2="288" stroke="#2B2F36" stroke-width="1.6"/>
+  <!-- scaling group -> RDS -->
+  <g stroke="#2B2F36" stroke-width="1.4" fill="none"><path d="M1110,465 L1041,520"/><path d="M1190,465 L1191,520"/><path d="M1270,465 L1341,520"/></g>
+
+  <!-- ===== Scaling activity execution program ===== -->
+  <rect x="170" y="440" width="410" height="72" rx="4" fill="#FFFFFF" stroke="#0A3CD9" stroke-width="2.5"/>
+  <text x="375" y="483" text-anchor="middle" font-size="18" fill="#1A1A1A">Scaling activity execution program</text>
+
+  <!-- ===== lower dashed: rules/config/activity ===== -->
+  <rect x="90" y="700" width="580" height="115" rx="6" fill="none" stroke="#9AA3B2" stroke-width="1.5" stroke-dasharray="8 6"/>
+  <g fill="#FFFFFF" stroke="#0A3CD9" stroke-width="2">
+    <rect x="110" y="720" width="150" height="74" rx="4"/><rect x="290" y="720" width="170" height="74" rx="4"/><rect x="490" y="720" width="150" height="74" rx="4"/>
+  </g>
+  <g text-anchor="middle" font-size="16" fill="#1A1A1A">
+    <text x="185" y="763">Scaling rules</text>
+    <text x="375" y="752">Scaling</text><text x="375" y="772">configuration</text>
+    <text x="565" y="763">Scaling activity</text>
+  </g>
+
+  <!-- ===== ECS instances (created) ===== -->
+  <rect x="820" y="715" width="240" height="160" rx="6" fill="none" stroke="#2B2F36" stroke-width="1.6" stroke-dasharray="8 6"/>
+  <use href="#srv" x="868" y="740" width="40" height="64"/>
+  <use href="#srv" x="948" y="740" width="40" height="64"/>
+  <g text-anchor="middle" font-size="16" fill="#1A1A1A"><text x="888" y="828">ECS</text><text x="968" y="828">ECS</text></g>
+
+  <!-- ===================== FLOW ARROWS + LABELS ===================== -->
+  <!-- 2. ExecuteScalingRule -->
+  <line x1="340" y1="220" x2="340" y2="438" stroke="#2B2F36" stroke-width="1.8" marker-end="url(#ar)"/>
+  <text x="200" y="338" font-size="17" fill="#1A1A1A">2. ExecuteScalingRule (Rule ARI)</text>
+
+  <!-- execution program -> 3.1/3.2/3.3 -->
+  <path d="M375,512 V545 M170,545 H565" stroke="#2B2F36" stroke-width="1.6" fill="none"/>
+  <line x1="185" y1="545" x2="185" y2="718" stroke="#2B2F36" stroke-width="1.6" marker-end="url(#ar)"/>
+  <line x1="375" y1="545" x2="375" y2="718" stroke="#2B2F36" stroke-width="1.6" marker-end="url(#ar)"/>
+  <line x1="565" y1="545" x2="565" y2="718" stroke="#2B2F36" stroke-width="1.6" marker-end="url(#ar)"/>
+  <text x="30" y="565" font-size="16" fill="#1A1A1A">3.1 Compute the number of ECS</text>
+  <text x="30" y="585" font-size="16" fill="#1A1A1A">instances to be added</text>
+  <text x="250" y="625" font-size="16" fill="#1A1A1A">3.2 Query the scaling</text>
+  <text x="250" y="645" font-size="16" fill="#1A1A1A">configuration</text>
+  <text x="430" y="535" font-size="16" fill="#1A1A1A">3.3 Create scaling activity</text>
+
+  <!-- 4.1 Create ECS instances -->
+  <path d="M640,757 H720 L820,790" stroke="#2B2F36" stroke-width="1.6" fill="none" marker-end="url(#ar)"/>
+  <text x="560" y="845" font-size="16" fill="#1A1A1A">4.1 Create ECS instances</text>
+
+  <!-- 4.2 Configure SLB and RDS -->
+  <path d="M1060,795 H1430 V470" stroke="#2B2F36" stroke-width="1.6" fill="none" marker-end="url(#ar)"/>
+  <text x="1150" y="800" font-size="16" fill="#1A1A1A">4.2 Configure</text>
+  <text x="1150" y="820" font-size="16" fill="#1A1A1A">Server Load Balancer</text>
+  <text x="1150" y="840" font-size="16" fill="#1A1A1A">and RDS</text>
+
+  <!-- 5. cool-down -->
+  <path d="M640,720 V490 H582" stroke="#2B2F36" stroke-width="1.6" fill="none" marker-end="url(#ar)"/>
+  <text x="660" y="540" font-size="16" fill="#1A1A1A">5. Start the cool-down</text>
+  <text x="660" y="560" font-size="16" fill="#1A1A1A">function for the scaling group</text>
+
+  <!-- 1. Monitor performance / health -->
+  <path d="M600,150 H700 V378 H958" stroke="#2B2F36" stroke-width="1.6" fill="none" marker-end="url(#ar)"/>
+  <text x="612" y="280" font-size="16" fill="#1A1A1A">1. Monitor</text>
+  <text x="612" y="300" font-size="16" fill="#1A1A1A">performance</text>
+  <path d="M410,105 V40 H760 V340 H958" stroke="#2B2F36" stroke-width="1.6" fill="none" marker-end="url(#ar)"/>
+  <text x="610" y="30" font-size="16" fill="#1A1A1A">1. Monitor health status</text>
+</svg>
