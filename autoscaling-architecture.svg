@@ -12,13 +12,16 @@
       <circle cx="74" cy="11" r="4.5" fill="#FFFFFF"/>
     </symbol>
 
-    <!-- RDS hexagon cluster (3 triangle motif) -->
-    <symbol id="rds" viewBox="0 0 120 110">
-      <path d="M30,4 L74,4 L96,42 L74,80 L30,80 L8,42 Z" fill="#13B5E6"/>
-      <path d="M64,18 L100,18 L118,50 L100,82 L64,82 L46,50 Z" fill="#1EC0EE" opacity="0.92"/>
-      <polygon points="56,30 80,30 68,52" fill="#FFFFFF"/>
-      <polygon points="50,58 62,58 56,46" fill="#FFFFFF"/>
-      <polygon points="74,58 86,58 80,46" fill="#FFFFFF"/>
+    <!-- RDS = Alibaba Cloud ApsaraDB hexagon mark (two overlapping hexes + 3-triangle motif) -->
+    <symbol id="rds" viewBox="0 0 130 120">
+      <!-- back hexagon (lighter), offset upper-right -->
+      <polygon points="80,16 110,33 110,67 80,84 50,67 50,33" fill="#5FD4F3"/>
+      <!-- front hexagon (main) -->
+      <polygon points="46,36 76,53 76,87 46,104 16,87 16,53" fill="#13B5E6"/>
+      <!-- white three-triangle motif on front hexagon, centered ~(46,70) -->
+      <polygon points="32,60 60,60 46,80" fill="#FFFFFF"/>
+      <polygon points="30,84 44,84 37,70" fill="#FFFFFF"/>
+      <polygon points="48,84 62,84 55,70" fill="#FFFFFF"/>
     </symbol>
 
     <!-- phone icon -->
