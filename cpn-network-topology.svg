@@ -62,16 +62,22 @@
   <text x="1420" y="318" font-size="13" fill="#5A6270">100G*4</text>
   <text x="1690" y="300" font-size="13" fill="#5A6270">25G*4</text>
 
-  <!-- top-zone -> DSW fan-out (representative) -->
-  <g stroke="#5A6270" stroke-width="1" fill="none" opacity="0.8">
-    <path d="M572,148 L760,222"/><path d="M682,148 L800,222"/>
-    <path d="M938,80 L820,222"/><path d="M938,80 L900,222"/><path d="M1050,80 L1010,222"/><path d="M1050,80 L1110,222"/>
-    <path d="M1350,150 L1130,222"/><path d="M1470,150 L1140,222"/>
+  <!-- access zones -> DSW (full fan) -->
+  <g stroke="#5A6270" stroke-width="0.8" fill="none" opacity="0.7">
+    <path d="M572,148 L785,222"/><path d="M572,148 L895,222"/><path d="M572,148 L1005,222"/>
+    <path d="M682,148 L785,222"/><path d="M682,148 L895,222"/><path d="M682,148 L1005,222"/><path d="M682,148 L1115,222"/>
+    <path d="M938,80 L785,222"/><path d="M938,80 L895,222"/><path d="M938,80 L1005,222"/><path d="M938,80 L1115,222"/>
+    <path d="M1050,80 L785,222"/><path d="M1050,80 L895,222"/><path d="M1050,80 L1005,222"/><path d="M1050,80 L1115,222"/>
+    <path d="M1350,150 L815,222"/><path d="M1350,150 L925,222"/><path d="M1350,150 L1035,222"/><path d="M1350,150 L1145,222"/>
+    <path d="M1470,150 L835,222"/><path d="M1470,150 L945,222"/><path d="M1470,150 L1055,222"/><path d="M1470,150 L1160,222"/>
   </g>
-  <!-- DSW -> HSW/ASW fan-out (representative) -->
-  <g stroke="#5A6270" stroke-width="1" fill="none" opacity="0.8">
-    <path d="M760,258 L300,330"/><path d="M820,258 L400,330"/><path d="M900,258 L590,330"/>
-    <path d="M1010,258 L1215,330"/><path d="M1110,258 L1320,330"/><path d="M1115,258 L1514,330"/><path d="M1140,258 L1767,330"/>
+  <!-- DSW -> HSW group & ASW group (full fan) -->
+  <g stroke="#5A6270" stroke-width="0.8" fill="none" opacity="0.7">
+    <path d="M785,258 L295,330"/><path d="M785,258 L400,330"/><path d="M785,258 L590,330"/>
+    <path d="M895,258 L295,330"/><path d="M895,258 L400,330"/><path d="M895,258 L590,330"/>
+    <path d="M1005,258 L1215,330"/><path d="M1005,258 L1320,330"/><path d="M1005,258 L1514,330"/>
+    <path d="M1115,258 L1215,330"/><path d="M1115,258 L1320,330"/><path d="M1115,258 L1514,330"/>
+    <path d="M1115,258 L1767,330"/><path d="M1005,258 L1767,330"/>
   </g>
 
   <!-- =================== CPN GPU NETWORK =================== -->
@@ -242,15 +248,40 @@
   </g>
   <g><rect x="1800" y="860" width="60" height="40" rx="2" fill="url(#nc3d)"/><rect x="1800" y="930" width="60" height="40" rx="2" fill="url(#nc3d)"/></g>
 
-  <!-- spine -> network downlinks (representative) -->
-  <g stroke="#5A6270" stroke-width="1" fill="none" opacity="0.8">
-    <path d="M300,364 L300,480"/><path d="M590,364 L500,480"/>
-    <path d="M820,258 L520,606"/><path d="M900,258 L620,606"/>
-    <path d="M1010,258 L1102,606"/><path d="M1110,258 L1357,606"/>
-    <path d="M1215,364 L1762,560"/><path d="M1767,364 L1820,860"/>
+  <!-- DSW -> RMSW (100G*4) and DSW -> EDSW (100G) -->
+  <g stroke="#5A6270" stroke-width="0.9" fill="none" opacity="0.75">
+    <path d="M785,258 L300,480"/><path d="M895,258 L512,480"/><path d="M895,258 L716,480"/><path d="M1005,258 L920,480"/>
+    <path d="M1005,258 L1102,606"/><path d="M1115,258 L1222,606"/><path d="M1115,258 L1357,606"/><path d="M1005,258 L1480,606"/>
+  </g>
+  <!-- RMSW -> RDSW breakout cables (400G*8) -->
+  <g stroke="#5A6270" stroke-width="0.9" fill="none" opacity="0.8">
+    <path d="M206,516 L320,606"/><path d="M308,516 L345,606"/><path d="M410,516 L370,606"/><path d="M512,516 L455,606"/>
+    <path d="M614,516 L590,606"/><path d="M716,516 L625,606"/><path d="M818,516 L720,606"/><path d="M920,516 L760,606"/>
+  </g>
+  <!-- RDSW -> RASW (400G) -->
+  <g stroke="#0A3CD9" stroke-width="1" fill="none" opacity="0.8">
+    <path d="M335,638 L300,733"/><path d="M470,638 L420,733"/><path d="M625,638 L560,733"/><path d="M750,638 L660,733"/>
+  </g>
+  <!-- EDSW -> EHSW (200G) -->
+  <g stroke="#0A3CD9" stroke-width="1" fill="none" opacity="0.8">
+    <path d="M1102,638 L1090,720"/><path d="M1222,638 L1180,720"/><path d="M1357,638 L1330,720"/><path d="M1480,638 L1450,720"/>
+  </g>
+  <!-- HSW -> NC (left edge) and bottom 200G -->
+  <g stroke="#2B2F36" stroke-width="1" fill="none" opacity="0.65">
+    <path d="M248,347 L60,347 L60,890 L213,890"/>
+    <path d="M280,904 L280,980 L700,980"/>
+  </g>
+  <!-- ASW n -> Cloud Platform (25G) -->
+  <g stroke="#5A6270" stroke-width="1" fill="none" opacity="0.75">
+    <path d="M1767,364 L1820,860"/><path d="M1767,364 L1820,930"/>
+  </g>
+  <!-- ASW -> EDSW (storage uplink) -->
+  <g stroke="#5A6270" stroke-width="0.8" fill="none" opacity="0.65">
+    <path d="M1215,364 L1102,606"/><path d="M1320,364 L1222,606"/>
   </g>
   <text x="640" y="475" font-size="13" fill="#5A6270">100G*4</text>
   <text x="1860" y="600" font-size="12" fill="#5A6270">25G</text>
+  <text x="500" y="975" font-size="12" fill="#5A6270">200G</text>
 
   <!-- brand -->
   <text x="40" y="1032" font-size="15" font-weight="800" fill="#0A3CD9" letter-spacing="0.5">ALIBABA CLOUD INTELLIGENCE</text>
