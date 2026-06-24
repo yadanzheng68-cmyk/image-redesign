@@ -25,17 +25,17 @@
 
   <!-- Tier-1 Cloud -->
   <use href="#cloud" x="150" y="110" width="660" height="300" fill="#EEF3FF" stroke="#2E5BEA" stroke-width="2"/>
-  <text x="480" y="152" text-anchor="middle" font-size="22" font-weight="700" fill="#0A3CD9">Tier-1 Cloud</text>
-  <text x="480" y="174" text-anchor="middle" font-size="14" font-style="italic" fill="#5A6270">High-Classification</text>
-  <use href="#apsara" x="345" y="186" width="60" height="56"/>
-  <use href="#apsara" x="555" y="186" width="60" height="56"/>
-  <use href="#apsara" x="450" y="270" width="60" height="56"/>
-  <line x1="412" y1="212" x2="548" y2="212" stroke="#2E5BEA" stroke-width="2.5" marker-end="url(#aB)" marker-start="url(#aBs)"/>
-  <line x1="378" y1="244" x2="452" y2="290" stroke="#2E5BEA" stroke-width="2.5" marker-end="url(#aB)"/>
-  <line x1="582" y1="244" x2="508" y2="290" stroke="#2E5BEA" stroke-width="2.5" marker-end="url(#aB)"/>
-  <text x="375" y="262" text-anchor="middle" font-size="15" font-weight="600" fill="#0A3CD9">AZ1 (Active)</text>
-  <text x="585" y="262" text-anchor="middle" font-size="15" font-weight="600" fill="#0A3CD9">AZ2 (Active)</text>
-  <text x="480" y="348" text-anchor="middle" font-size="15" font-weight="600" fill="#0A3CD9">AZ3 (DR)</text>
+  <text x="480" y="178" text-anchor="middle" font-size="22" font-weight="700" fill="#0A3CD9">Tier-1 Cloud</text>
+  <text x="480" y="200" text-anchor="middle" font-size="14" font-style="italic" fill="#5A6270">High-Classification</text>
+  <use href="#apsara" x="345" y="212" width="60" height="56"/>
+  <use href="#apsara" x="555" y="212" width="60" height="56"/>
+  <use href="#apsara" x="450" y="296" width="60" height="56"/>
+  <line x1="412" y1="238" x2="548" y2="238" stroke="#2E5BEA" stroke-width="2.5" marker-end="url(#aB)" marker-start="url(#aBs)"/>
+  <line x1="378" y1="270" x2="452" y2="316" stroke="#2E5BEA" stroke-width="2.5" marker-end="url(#aB)"/>
+  <line x1="582" y1="270" x2="508" y2="316" stroke="#2E5BEA" stroke-width="2.5" marker-end="url(#aB)"/>
+  <text x="375" y="288" text-anchor="middle" font-size="15" font-weight="600" fill="#0A3CD9">AZ1 (Active)</text>
+  <text x="585" y="288" text-anchor="middle" font-size="15" font-weight="600" fill="#0A3CD9">AZ2 (Active)</text>
+  <text x="480" y="374" text-anchor="middle" font-size="15" font-weight="600" fill="#0A3CD9">AZ3 (DR)</text>
 
   <!-- Hardware Data Diode -->
   <rect x="330" y="404" width="300" height="32" rx="3" fill="#1B2A52"/>
@@ -43,17 +43,17 @@
 
   <!-- Tier-2 Cloud -->
   <use href="#cloud" x="150" y="450" width="660" height="300" fill="#EEF3FF" stroke="#2E5BEA" stroke-width="2"/>
-  <text x="480" y="492" text-anchor="middle" font-size="22" font-weight="700" fill="#0A3CD9">Tier-2 Cloud</text>
-  <text x="480" y="514" text-anchor="middle" font-size="14" font-style="italic" fill="#5A6270">Generic-Classification</text>
-  <use href="#apsara" x="345" y="526" width="60" height="56"/>
-  <use href="#apsara" x="555" y="526" width="60" height="56"/>
-  <use href="#apsara" x="450" y="610" width="60" height="56"/>
-  <line x1="412" y1="552" x2="548" y2="552" stroke="#2E5BEA" stroke-width="2.5" marker-end="url(#aB)" marker-start="url(#aBs)"/>
-  <line x1="378" y1="584" x2="452" y2="630" stroke="#2E5BEA" stroke-width="2.5" marker-end="url(#aB)"/>
-  <line x1="582" y1="584" x2="508" y2="630" stroke="#2E5BEA" stroke-width="2.5" marker-end="url(#aB)"/>
-  <text x="375" y="602" text-anchor="middle" font-size="15" font-weight="600" fill="#0A3CD9">AZ1 (Active)</text>
-  <text x="585" y="602" text-anchor="middle" font-size="15" font-weight="600" fill="#0A3CD9">AZ2 (Active)</text>
-  <text x="480" y="688" text-anchor="middle" font-size="15" font-weight="600" fill="#0A3CD9">AZ3 (DR)</text>
+  <text x="480" y="518" text-anchor="middle" font-size="22" font-weight="700" fill="#0A3CD9">Tier-2 Cloud</text>
+  <text x="480" y="540" text-anchor="middle" font-size="14" font-style="italic" fill="#5A6270">Generic-Classification</text>
+  <use href="#apsara" x="345" y="552" width="60" height="56"/>
+  <use href="#apsara" x="555" y="552" width="60" height="56"/>
+  <use href="#apsara" x="450" y="636" width="60" height="56"/>
+  <line x1="412" y1="578" x2="548" y2="578" stroke="#2E5BEA" stroke-width="2.5" marker-end="url(#aB)" marker-start="url(#aBs)"/>
+  <line x1="378" y1="610" x2="452" y2="656" stroke="#2E5BEA" stroke-width="2.5" marker-end="url(#aB)"/>
+  <line x1="582" y1="610" x2="508" y2="656" stroke="#2E5BEA" stroke-width="2.5" marker-end="url(#aB)"/>
+  <text x="375" y="628" text-anchor="middle" font-size="15" font-weight="600" fill="#0A3CD9">AZ1 (Active)</text>
+  <text x="585" y="628" text-anchor="middle" font-size="15" font-weight="600" fill="#0A3CD9">AZ2 (Active)</text>
+  <text x="480" y="714" text-anchor="middle" font-size="15" font-weight="600" fill="#0A3CD9">AZ3 (DR)</text>
 
   <!-- Validation Cloud (isolated, gray) -->
   <use href="#cloud" x="190" y="800" width="540" height="190" fill="#ECEDEF" stroke="#B7BCC4" stroke-width="2"/>
