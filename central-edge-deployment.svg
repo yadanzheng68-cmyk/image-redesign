@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1010" viewBox="0 0 1600 1010" font-family="'Helvetica Neue','Arial',sans-serif">
+  <defs>
+    <marker id="aB" markerWidth="11" markerHeight="11" refX="7" refY="5" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L9,5 L0,10 Z" fill="#2E5BEA"/></marker>
+    <marker id="aBs" markerWidth="11" markerHeight="11" refX="2" refY="5" orient="auto" markerUnits="userSpaceOnUse"><path d="M9,0 L0,5 L9,10 Z" fill="#2E5BEA"/></marker>
+    <symbol id="cloud" viewBox="0 0 300 140">
+      <path d="M70,128 C30,128 18,92 44,80 C36,50 78,34 100,52 C112,22 168,22 182,54 C222,46 252,76 226,98 C248,116 220,136 198,124 C182,140 92,142 70,128 Z"/>
+    </symbol>
+    <symbol id="apsara" viewBox="0 0 64 60">
+      <polygon points="32,3 60,17 32,31 4,17" fill="#3A4F86"/>
+      <polygon points="4,17 32,31 32,55 4,41" fill="#15244C"/>
+      <polygon points="32,31 60,17 60,41 32,55" fill="#21356A"/>
+      <text x="32" y="40" text-anchor="middle" font-size="8" fill="#FFFFFF">Apsara</text>
+      <text x="32" y="50" text-anchor="middle" font-size="8" fill="#FFFFFF">Stack</text>
+    </symbol>
+  </defs>
+  <rect x="0" y="0" width="1600" height="1010" fill="#FFFFFF"/>
+  <text x="1180" y="34" font-size="16" font-weight="800" fill="#0A3CD9" letter-spacing="0.5">ALIBABA CLOUD INTELLIGENCE</text>
+  <text x="1492" y="34" font-size="16" font-weight="800" fill="#8A8F99" letter-spacing="0.5">GROUP</text>
+
+  <!-- ===================== CENTRAL DEPLOYMENT ===================== -->
+  <rect x="30" y="46" width="1010" height="945" rx="20" fill="none" stroke="#0A3CD9" stroke-width="2.5"/>
+  <text x="470" y="78" text-anchor="middle" font-size="24" font-weight="700" fill="#0A3CD9">Central Deployment</text>
+  <rect x="60" y="92" width="850" height="690" rx="6" fill="none" stroke="#2E5BEA" stroke-width="1.6" stroke-dasharray="8 6"/>
+
+  <!-- Tier-1 Cloud -->
+  <use href="#cloud" x="150" y="110" width="660" height="300" fill="#EEF3FF" stroke="#2E5BEA" stroke-width="2"/>
+  <text x="480" y="152" text-anchor="middle" font-size="22" font-weight="700" fill="#0A3CD9">Tier-1 Cloud</text>
+  <text x="480" y="174" text-anchor="middle" font-size="14" font-style="italic" fill="#5A6270">High-Classification</text>
+  <use href="#apsara" x="345" y="186" width="60" height="56"/>
+  <use href="#apsara" x="555" y="186" width="60" height="56"/>
+  <use href="#apsara" x="450" y="270" width="60" height="56"/>
+  <line x1="412" y1="212" x2="548" y2="212" stroke="#2E5BEA" stroke-width="2.5" marker-end="url(#aB)" marker-start="url(#aBs)"/>
+  <line x1="378" y1="244" x2="452" y2="290" stroke="#2E5BEA" stroke-width="2.5" marker-end="url(#aB)"/>
+  <line x1="582" y1="244" x2="508" y2="290" stroke="#2E5BEA" stroke-width="2.5" marker-end="url(#aB)"/>
+  <text x="375" y="262" text-anchor="middle" font-size="15" font-weight="600" fill="#0A3CD9">AZ1 (Active)</text>
+  <text x="585" y="262" text-anchor="middle" font-size="15" font-weight="600" fill="#0A3CD9">AZ2 (Active)</text>
+  <text x="480" y="348" text-anchor="middle" font-size="15" font-weight="600" fill="#0A3CD9">AZ3 (DR)</text>
+
+  <!-- Hardware Data Diode -->
+  <rect x="330" y="404" width="300" height="32" rx="3" fill="#1B2A52"/>
+  <text x="480" y="425" text-anchor="middle" font-size="14" font-weight="600" fill="#FFFFFF">Hardware Data Diode &#9658; Unidirectional</text>
+
+  <!-- Tier-2 Cloud -->
+  <use href="#cloud" x="150" y="450" width="660" height="300" fill="#EEF3FF" stroke="#2E5BEA" stroke-width="2"/>
+  <text x="480" y="492" text-anchor="middle" font-size="22" font-weight="700" fill="#0A3CD9">Tier-2 Cloud</text>
+  <text x="480" y="514" text-anchor="middle" font-size="14" font-style="italic" fill="#5A6270">Generic-Classification</text>
+  <use href="#apsara" x="345" y="526" width="60" height="56"/>
+  <use href="#apsara" x="555" y="526" width="60" height="56"/>
+  <use href="#apsara" x="450" y="610" width="60" height="56"/>
+  <line x1="412" y1="552" x2="548" y2="552" stroke="#2E5BEA" stroke-width="2.5" marker-end="url(#aB)" marker-start="url(#aBs)"/>
+  <line x1="378" y1="584" x2="452" y2="630" stroke="#2E5BEA" stroke-width="2.5" marker-end="url(#aB)"/>
+  <line x1="582" y1="584" x2="508" y2="630" stroke="#2E5BEA" stroke-width="2.5" marker-end="url(#aB)"/>
+  <text x="375" y="602" text-anchor="middle" font-size="15" font-weight="600" fill="#0A3CD9">AZ1 (Active)</text>
+  <text x="585" y="602" text-anchor="middle" font-size="15" font-weight="600" fill="#0A3CD9">AZ2 (Active)</text>
+  <text x="480" y="688" text-anchor="middle" font-size="15" font-weight="600" fill="#0A3CD9">AZ3 (DR)</text>
+
+  <!-- Validation Cloud (isolated, gray) -->
+  <use href="#cloud" x="190" y="800" width="540" height="190" fill="#ECEDEF" stroke="#B7BCC4" stroke-width="2"/>
+  <text x="455" y="852" text-anchor="middle" font-size="22" font-weight="700" fill="#3A3A3A">Validation Cloud (AZ-0)</text>
+  <text x="455" y="874" text-anchor="middle" font-size="14" font-style="italic" fill="#6B7280">Physically Isolated &#183; Zero-Trust Gate</text>
+  <use href="#apsara" x="425" y="892" width="56" height="52"/>
+  <text x="453" y="972" text-anchor="middle" font-size="15" font-weight="600" fill="#3A3A3A">AZ-0</text>
+
+  <!-- ===================== EDGE NODES ===================== -->
+  <rect x="1085" y="135" width="475" height="730" rx="6" fill="none" stroke="#0A3CD9" stroke-width="2"/>
+  <rect x="1085" y="135" width="475" height="48" rx="6" fill="#0A3CD9"/>
+  <text x="1322" y="167" text-anchor="middle" font-size="22" font-weight="700" fill="#FFFFFF">Edge Nodes</text>
+
+  <!-- Edge Site S -->
+  <rect x="1115" y="208" width="415" height="150" rx="6" fill="none" stroke="#C7D6F7" stroke-width="1.5"/>
+  <text x="1322" y="248" text-anchor="middle" font-size="20" font-weight="700" fill="#0A3CD9">Edge Site S</text>
+  <g><rect x="1295" y="268" width="54" height="26" rx="4" fill="#2B2F36"/><circle cx="1305" cy="281" r="3" fill="#5A8AF0"/><rect x="1314" y="278" width="28" height="3" rx="1.5" fill="#5A8AF0"/></g>
+  <text x="1322" y="330" text-anchor="middle" font-size="15" font-style="italic" fill="#5A6270">Edge Device</text>
+
+  <!-- Edge Site M -->
+  <rect x="1115" y="378" width="415" height="178" rx="6" fill="none" stroke="#C7D6F7" stroke-width="1.5"/>
+  <text x="1322" y="418" text-anchor="middle" font-size="20" font-weight="700" fill="#0A3CD9">Edge Site M</text>
+  <g><rect x="1308" y="436" width="30" height="56" rx="3" fill="#2B2F36"/><g fill="#5A8AF0"><rect x="1313" y="442" width="20" height="4" rx="2"/><rect x="1313" y="451" width="20" height="4" rx="2"/><rect x="1313" y="460" width="20" height="4" rx="2"/></g><circle cx="1316" cy="483" r="3" fill="#5A8AF0"/></g>
+  <text x="1322" y="518" text-anchor="middle" font-size="15" font-style="italic" fill="#5A6270">AI Stack (Single Node)</text>
+  <text x="1322" y="540" text-anchor="middle" font-size="15" fill="#1A1A1A">Inference + Hot-Spot Compute</text>
+
+  <!-- Edge Site L -->
+  <rect x="1115" y="576" width="415" height="200" rx="6" fill="none" stroke="#C7D6F7" stroke-width="1.5"/>
+  <text x="1322" y="616" text-anchor="middle" font-size="20" font-weight="700" fill="#0A3CD9">Edge Site L</text>
+  <g fill="#2B2F36">
+    <rect x="1286" y="636" width="22" height="60" rx="2"/><rect x="1311" y="636" width="22" height="60" rx="2"/><rect x="1336" y="636" width="22" height="60" rx="2"/>
+  </g>
+  <g fill="#5A8AF0"><rect x="1290" y="642" width="14" height="3"/><rect x="1290" y="650" width="14" height="3"/><rect x="1315" y="642" width="14" height="3"/><rect x="1315" y="650" width="14" height="3"/><rect x="1340" y="642" width="14" height="3"/><rect x="1340" y="650" width="14" height="3"/></g>
+  <text x="1322" y="730" text-anchor="middle" font-size="15" font-style="italic" fill="#5A6270">AI Stack (Cluster)</text>
+  <text x="1322" y="752" text-anchor="middle" font-size="15" fill="#1A1A1A">Inference + Compute + Training</text>
+
+  <!-- Central <-> Edge link -->
+  <path d="M1040,470 H1063 V467 H1085" fill="none" stroke="#0A3CD9" stroke-width="2"/>
+</svg>
