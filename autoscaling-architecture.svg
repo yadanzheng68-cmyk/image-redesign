@@ -3,7 +3,7 @@
   <defs>
     <linearGradient id="barG" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#3A6BF0"/><stop offset="1" stop-color="#0A3CD9"/></linearGradient>
     <linearGradient id="lbG" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#C7D6FF"/><stop offset="1" stop-color="#3A6BF0"/></linearGradient>
-    <linearGradient id="curveG" x1="0" y1="1" x2="0" y2="0"><stop offset="0" stop-color="#9CB4E8"/><stop offset="1" stop-color="#0A3CD9"/></linearGradient>
+    <linearGradient id="curveG" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#9CB4E8"/><stop offset="1" stop-color="#0A3CD9"/></linearGradient>
     <marker id="ar" markerWidth="11" markerHeight="11" refX="7" refY="5" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L9,5 L0,10 Z" fill="#5A6270"/></marker>
 
     <!-- one blue server bar -->
@@ -112,15 +112,14 @@
   <use href="#rds" x="1135" y="355" width="135" height="124"/>
   <text x="1202" y="520" text-anchor="middle" font-size="18" fill="#1A1A1A">RDS instance</text>
 
-  <!-- ===================== SCALING-OUT GROUP ===================== -->
-  <!-- new server group (bottom-left of ECS) -->
+  <!-- ===================== SCALING GROUP (below-right of ECS) ===================== -->
   <g>
-    <use href="#bar" x="475" y="585" width="110" height="26"/>
-    <use href="#bar" x="475" y="619" width="110" height="26"/>
-    <use href="#bar" x="475" y="653" width="110" height="26"/>
+    <use href="#bar" x="905" y="600" width="110" height="26"/>
+    <use href="#bar" x="905" y="634" width="110" height="26"/>
+    <use href="#bar" x="905" y="668" width="110" height="26"/>
   </g>
-  <!-- big curved gradient arrow into ECS column -->
-  <path d="M590,648 C700,722 772,706 798,592"
+  <!-- big curved gradient arrow: ECS column -> server group (down-right, per original) -->
+  <path d="M832,556 C800,604 866,608 888,636"
         fill="none" stroke="url(#curveG)" stroke-width="14" stroke-linecap="round"/>
-  <path d="M798,572 L778,606 L822,600 Z" fill="#4A86D8"/>
+  <path d="M900,652 L871,641 L893,623 Z" fill="#0A3CD9"/>
 </svg>
