@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="680" viewBox="0 0 1500 680" font-family="'Helvetica Neue','Arial',sans-serif">
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="680" viewBox="0 0 1500 680" font-family="'WenQuanYi Zen Hei','Helvetica Neue','Arial',sans-serif">
   <defs>
     <marker id="ar" markerWidth="11" markerHeight="11" refX="7" refY="5" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L9,5 L0,10 Z" fill="#8A93A3"/></marker>
     <marker id="arBig" markerWidth="13" markerHeight="13" refX="8" refY="6" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L11,6 L0,12 Z" fill="#0A3CD9"/></marker>
@@ -10,7 +10,7 @@
   <text x="1346" y="28" font-size="15" font-weight="800" fill="#8A8F99" letter-spacing="0.5">GROUP</text>
 
   <!-- Headline + leverage axis -->
-  <text x="750" y="62" text-anchor="middle" font-size="22" font-weight="700" fill="#1A1A1A">Leverage point moves further from the model</text>
+  <text x="750" y="62" text-anchor="middle" font-size="22" font-weight="700" fill="#1A1A1A">杠杆点离模型越来越远 &#8594;</text>
   <line x1="150" y1="94" x2="1352" y2="94" stroke="#0A3CD9" stroke-width="2.5" marker-end="url(#arBig)"/>
 
   <!-- Column headers -->
@@ -18,7 +18,7 @@
     <text x="285"  y="132" fill="#1A1A1A">~2022</text>
     <text x="595"  y="132" fill="#1A1A1A">2023&#8211;24</text>
     <text x="905"  y="132" fill="#1A1A1A">2025+</text>
-    <text x="1215" y="132" fill="#0A3CD9">&#9733; Next step</text>
+    <text x="1215" y="132" fill="#0A3CD9">&#9733; 下一步</text>
   </g>
 
   <!-- ===================== ROW 1: Engineering Paradigm (solid blue) ===================== -->
@@ -30,13 +30,13 @@
   </g>
   <g text-anchor="middle">
     <text x="285"  y="198" font-size="25" font-weight="700" fill="#FFFFFF">Prompt</text>
-    <text x="285"  y="226" font-size="16" fill="#C9D6FF">Optimize instructions</text>
+    <text x="285"  y="226" font-size="16" fill="#C9D6FF">优化指令</text>
     <text x="595"  y="198" font-size="25" font-weight="700" fill="#FFFFFF">Context</text>
-    <text x="595"  y="226" font-size="16" fill="#C9D6FF">Optimize context</text>
+    <text x="595"  y="226" font-size="16" fill="#C9D6FF">优化上下文</text>
     <text x="905"  y="198" font-size="25" font-weight="700" fill="#FFFFFF">Harness</text>
-    <text x="905"  y="226" font-size="16" fill="#C9D6FF">Optimize outer loop</text>
+    <text x="905"  y="226" font-size="16" fill="#C9D6FF">优化外层循环</text>
     <text x="1215" y="198" font-size="25" font-weight="700" fill="#0A3CD9">Organization</text>
-    <text x="1215" y="226" font-size="16" fill="#5A6270">Orchestrate digital employees</text>
+    <text x="1215" y="226" font-size="16" fill="#5A6270">编排数字员工</text>
   </g>
 
   <!-- horizontal flow arrows -->
@@ -53,13 +53,13 @@
   </g>
   <g text-anchor="middle">
     <text x="285"  y="338" font-size="24" font-weight="700" fill="#0A3CD9">Copilot</text>
-    <text x="285"  y="366" font-size="16" fill="#5A6270">Code completion</text>
+    <text x="285"  y="366" font-size="16" fill="#5A6270">代码补全</text>
     <text x="595"  y="338" font-size="24" font-weight="700" fill="#0A3CD9">Qoder</text>
-    <text x="595"  y="366" font-size="16" fill="#5A6270">Pair &#183; Agent</text>
+    <text x="595"  y="366" font-size="16" fill="#5A6270">结对 &#183; Agent</text>
     <text x="905"  y="338" font-size="24" font-weight="700" fill="#0A3CD9">Quest</text>
     <text x="905"  y="366" font-size="16" fill="#5A6270">+ QoderWork</text>
     <text x="1215" y="338" font-size="24" font-weight="700" fill="#0A3CD9">QoderWake</text>
-    <text x="1215" y="366" font-size="16" fill="#5A6270">Digital employees &#183; Formation</text>
+    <text x="1215" y="366" font-size="16" fill="#5A6270">数字员工 &#183; 编队</text>
   </g>
 
   <!-- vertical dashed arrows: base -> product line -->
@@ -72,17 +72,17 @@
 
   <!-- ===================== BASE LAYER: Foundation Model ===================== -->
   <rect x="150" y="450" width="1200" height="180" rx="12" fill="#ECEDEF" stroke="#D2D6DC" stroke-width="1.5"/>
-  <text x="175" y="484" font-size="21" font-weight="700" fill="#1A1A1A">Foundation Model &#183; Multi-supply &#183; Switchable (value not at this layer)</text>
+  <text x="175" y="484" font-size="21" font-weight="700" fill="#1A1A1A">基座模型 &#183; 多供给 &#183; 可切换（价值不在此层）</text>
   <line x1="150" y1="502" x2="1350" y2="502" stroke="#D2D6DC" stroke-width="1.2"/>
   <g stroke="#D2D6DC" stroke-width="1.2"><line x1="440" y1="502" x2="440" y2="630"/><line x1="750" y1="502" x2="750" y2="630"/><line x1="1060" y1="502" x2="1060" y2="630"/></g>
   <g text-anchor="middle">
-    <text x="285"  y="552" font-size="19" font-weight="700" fill="#46577A">Completion-level</text>
+    <text x="285"  y="552" font-size="20" font-weight="700" fill="#46577A">补全级</text>
     <text x="285"  y="582" font-size="16" fill="#6B7280">GPT-3 / Codex</text>
-    <text x="595"  y="552" font-size="19" font-weight="700" fill="#46577A">Instruction-following</text>
+    <text x="595"  y="552" font-size="20" font-weight="700" fill="#46577A">指令遵循</text>
     <text x="595"  y="582" font-size="16" fill="#6B7280">GPT-3.5 &#183; Qwen</text>
-    <text x="905"  y="552" font-size="19" font-weight="700" fill="#46577A">Long-context / Tools</text>
+    <text x="905"  y="552" font-size="20" font-weight="700" fill="#46577A">长上下文 / 工具</text>
     <text x="905"  y="582" font-size="16" fill="#6B7280">Claude &#183; Qwen</text>
-    <text x="1215" y="552" font-size="19" font-weight="700" fill="#46577A">Long-horizon autonomy</text>
-    <text x="1215" y="582" font-size="16" fill="#6B7280">Frontier multi-model</text>
+    <text x="1215" y="552" font-size="20" font-weight="700" fill="#46577A">长程自主</text>
+    <text x="1215" y="582" font-size="16" fill="#6B7280">前沿多模型</text>
   </g>
 </svg>
