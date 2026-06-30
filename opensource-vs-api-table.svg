@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="1050" viewBox="0 0 1500 1050" font-family="'WenQuanYi Zen Hei','Helvetica Neue','Arial',sans-serif">
+  <defs>
+    <clipPath id="clip"><rect x="30" y="92" width="1440" height="933" rx="14"/></clipPath>
+  </defs>
+
+  <rect x="0" y="0" width="1500" height="1050" fill="#FFFFFF"/>
+  <text x="1042" y="30" font-size="15" font-weight="800" fill="#0A3CD9" letter-spacing="0.5">ALIBABA CLOUD INTELLIGENCE</text>
+  <text x="1346" y="30" font-size="15" font-weight="800" fill="#8A8F99" letter-spacing="0.5">GROUP</text>
+
+  <!-- Slide title -->
+  <text x="30" y="68" font-size="27" font-weight="700" fill="#0A3CD9">闭源（API） <tspan fill="#FF6A00">vs</tspan> 开源（权重发布）</text>
+
+  <g clip-path="url(#clip)">
+    <!-- body background -->
+    <rect x="30" y="92" width="1440" height="933" fill="#FFFFFF"/>
+    <!-- zebra stripes (even rows) -->
+    <g fill="#F4F7FE">
+      <rect x="30" y="156" width="1440" height="79"/>
+      <rect x="30" y="314" width="1440" height="79"/>
+      <rect x="30" y="472" width="1440" height="79"/>
+      <rect x="30" y="630" width="1440" height="79"/>
+      <rect x="30" y="788" width="1440" height="79"/>
+      <rect x="30" y="946" width="1440" height="79"/>
+    </g>
+    <!-- header bar -->
+    <rect x="30" y="92" width="1440" height="64" fill="#0A3CD9"/>
+    <!-- column dividers (body) -->
+    <g stroke="#E4EAF6" stroke-width="1"><line x1="300" y1="156" x2="300" y2="1025"/><line x1="885" y1="156" x2="885" y2="1025"/></g>
+    <!-- row separators -->
+    <g stroke="#EAEFF8" stroke-width="1">
+      <line x1="30" y1="235" x2="1470" y2="235"/><line x1="30" y1="314" x2="1470" y2="314"/>
+      <line x1="30" y1="393" x2="1470" y2="393"/><line x1="30" y1="472" x2="1470" y2="472"/>
+      <line x1="30" y1="551" x2="1470" y2="551"/><line x1="30" y1="630" x2="1470" y2="630"/>
+      <line x1="30" y1="709" x2="1470" y2="709"/><line x1="30" y1="788" x2="1470" y2="788"/>
+      <line x1="30" y1="867" x2="1470" y2="867"/><line x1="30" y1="946" x2="1470" y2="946"/>
+    </g>
+  </g>
+  <!-- outer border -->
+  <rect x="30" y="92" width="1440" height="933" rx="14" fill="none" stroke="#D8E0F0" stroke-width="1.5"/>
+
+  <!-- ===== Header text ===== -->
+  <g font-size="21" font-weight="700" fill="#FFFFFF">
+    <text x="55" y="132">对比维度</text>
+    <text x="320" y="132">闭源（API）</text>
+    <text x="905" y="132">开源（权重发布）</text>
+  </g>
+
+  <!-- ===== Dimension column (blue, bold) ===== -->
+  <g font-size="19" font-weight="700" fill="#0A3CD9">
+    <text x="55" y="201">模型能力</text>
+    <text x="55" y="280">上下文长度</text>
+    <text x="55" y="359">训练数据</text>
+    <text x="55" y="438">对齐与安全</text>
+    <text x="55" y="517">推理性能</text>
+    <text x="55" y="596">功能完整度</text>
+    <text x="55" y="675">更新方式</text>
+    <text x="55" y="754">数据安全</text>
+    <text x="55" y="833">定制化</text>
+    <text x="55" y="912">成本模式</text>
+    <text x="55" y="991">适用场景</text>
+  </g>
+
+  <!-- ===== 闭源 (API) column ===== -->
+  <g font-size="18" fill="#1A1A1A">
+    <text x="320" y="201">同名版本通常更强，持续优化迭代</text>
+    <text x="320" y="280">更长（如Qwen-Long 1M tokens）</text>
+    <text x="320" y="359">可能用了更多/更新的数据</text>
+    <text x="320" y="438">更严格，根据线上反馈持续调整</text>
+    <text x="320" y="517">专有推理加速，低延迟高吞吐</text>
+    <text x="320" y="596">Tool calling、structured output 等更成熟</text>
+    <text x="320" y="675">静默升级，同 endpoint 背后模型可能已迭代</text>
+    <text x="320" y="754">数据经过服务商</text>
+    <text x="320" y="833">仅支持 API 参数调整</text>
+    <text x="320" y="912">按 token 付费，无需 GPU</text>
+    <text x="320" y="991">追求最优效果、快速上线、不敏感数据</text>
+  </g>
+
+  <!-- ===== 开源 (权重发布) column ===== -->
+  <g font-size="18" fill="#1A1A1A">
+    <text x="905" y="201">发布时刻的固定快照，能力不再更新</text>
+    <text x="905" y="280">通常 32K/128K，需自行扩展</text>
+    <text x="905" y="359">发布时的训练数据截止</text>
+    <text x="905" y="438">固定状态，用户可微调修改</text>
+    <text x="905" y="517">自行部署优化（vLLM/TGI 等）</text>
+    <text x="905" y="596">基础能力具备，工程化需自建</text>
+    <text x="905" y="675">版本固定，等下一个 release</text>
+    <text x="905" y="754">私有部署，数据不出域</text>
+    <text x="905" y="833">可全量微调/LoRA/量化等</text>
+    <text x="905" y="912">需自备算力，一次性部署成本高</text>
+    <text x="905" y="991">私有化部署、领域微调、数据合规要求高</text>
+  </g>
+</svg>
